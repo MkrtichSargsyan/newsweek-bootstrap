@@ -7,6 +7,7 @@
 :root {
   --color-red: #f42;
   --bg-color-red: #f42;
+  --color-grey:#aaa;
 }
 
 *,
@@ -19,21 +20,21 @@
   box-sizing: border-box;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  color: #333;
-}
 
 /*
     ==============================================
                 ****** GLOBAL ******
     ==============================================
 */
+
+
+/*
+    ==============================================
+                ****** HEAADER ******
+    ==============================================
+*/
+
+
+.bars-icon{
+  color: var(--color-grey);
+}

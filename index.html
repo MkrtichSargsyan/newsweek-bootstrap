@@ -9,6 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
 
   <title>Hello, world!</title>
 </head>
@@ -16,34 +18,52 @@
 <body>
 
   <header>
-    <nav class="row text-white px-2 py-2 container-fluid d-flex justify-content-space-between" style="background-color: #f72210;">
-      <div class="weather-date col-lg-2 py-3 d-md-none d-lg-block">
-        <div>
-          <a class="text-white" href="#">
-            <i class="fas fa-cloud-sun-rain"></i><span>31°</span><span>Lorem impsum</span>
-          </a>
+
+      <nav class="row text-white container-fluid px-2 py-2 d-flex justify-content-space-between"
+        style="background-color: #f72210;">
+
+
+        <!-- weather- date -->
+
+        <div class="weather-date col-lg-3 py-3 d-none d-lg-block">
+
+          <div>
+            <a class="text-white" href="#">
+              <i class="fas fa-cloud-sun-rain"></i><span>31°</span><span>Lorem impsum</span>
+            </a>
+          </div>
+
+          <div>
+            <div>Fri, Jul 31, 2020</div>
+          </div>
         </div>
-        <div>
-          <div>Fri, Jul 31, 2020</div>
+  
+  
+        <!-- logo -->
+  
+        <div class="col-3 col-md-6 col-3 d-flex justify-content-center align-items-center">
+          <img src="img/logo.png" alt="Newsweek Logo" class="mw-100">
         </div>
-      </div>
+
+        <!-- login -->
+  
+        <div class=" col-lg-3 col-md-6 col-9 d-flex align-items-center justify-content-end">
+          <button class="display-5 font-weight-bolder m-0 bg-transparent border-0 text-white d-none d-md-block">LOGIN</button>
+          <div>
+            <button type="button" class="btn btn-warning font-weight-bolder rounded-pill mx-3 text-uppercase">Subscribe</button>
+          </div>
+          <i class="bars-icon fas fa-bars d-lg-none fa-2x "></i>
+        </div>
+  
+      </nav>
 
 
+<!-- middle nav -->
 
-      <div class="col-md-8 d-md-flex justify-content-center ">
-        <img src="img/logo.png" alt="Newsweek Logo">
-      </div>
-      <div class="col-md-2 text-white d-flex align-items-center vertical-align-middle">
-       <p class="display-5 font-weight-bolder">LOGIN</p>
-       <div>
-        <button type="button" class="btn btn-warning font-weight-bolder rounded-pill">Subscribe</button>
-      </div>
-      <i class="fas fa-bars d-lg-none"></i>
-      </div>
-    </nav>
     <nav class="middle-nav">
 
     </nav>
+
     <nav class="bottom-nav"></nav>
   </header>
 
