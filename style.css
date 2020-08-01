@@ -26,7 +26,17 @@
                 ****** GLOBAL ******
     ==============================================
 */
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
+a {
+  font-size: 18px;
+}
+
+a:hover {
+ color: #f72210;
+}
 
 /*
     ==============================================
@@ -34,7 +44,22 @@
     ==============================================
 */
 
-
 .bars-icon{
   color: var(--color-grey);
+}
+
+.container-fluid {
+  background-color: #f72210;
+}
+
+#search-bar {
+  width: 60px;
+}
+
+#search-bar:active ~ #medium-nav {
+  border:solid 1px red;
+}
+
+#search-bar:active {
+  width: 100%;
 }

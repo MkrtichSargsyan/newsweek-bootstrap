@@ -5,6 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -19,8 +20,7 @@
 
   <header>
 
-      <nav class="row text-white container-fluid px-2 py-2 d-flex justify-content-space-between"
-        style="background-color: #f72210;">
+      <nav class="row text-white container-fluid px-2 py-2 d-flex justify-content-space-between">
 
 
         <!-- weather- date -->
@@ -41,16 +41,17 @@
   
         <!-- logo -->
   
-        <div class="col-3 col-md-6 col-3 d-flex justify-content-center align-items-center">
-          <img src="img/logo.png" alt="Newsweek Logo" class="mw-100">
+        <div class="col-3 col-md-6 col-5 d-flex justify-content-center align-items-center">
+          <img src="img/logo.svg" alt="Newsweek Logo" class="mw-100">
         </div>
 
         <!-- login -->
   
-        <div class=" col-lg-3 col-md-6 col-9 d-flex align-items-center justify-content-end">
+        <div class=" col-lg-3 col-md-6 col-6 d-flex align-items-center">
+          <i class="fas fa-user fa-md-2x d-md-none"></i>
           <button class="display-5 font-weight-bolder m-0 bg-transparent border-0 text-white d-none d-md-block">LOGIN</button>
           <div>
-            <button type="button" class="btn btn-warning font-weight-bolder rounded-pill mx-3 text-uppercase">Subscribe</button>
+            <button type="button" class="btn btn-warning font-weight-bolder rounded-pill mx-3">SUBSCRIBE</button>
           </div>
           <i class="bars-icon fas fa-bars d-lg-none fa-2x "></i>
         </div>
@@ -60,9 +61,26 @@
 
 <!-- middle nav -->
 
-    <nav class="middle-nav">
-
-    </nav>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="navbar-nav d-lg-flex d-none">
+      <div id="medium-nav" class="d-flex">
+      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">U.S</a>
+      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">World</a>
+      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Business</a>
+      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Tech & Science</a>
+      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Culture</a>
+      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">News Geek</a>
+      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Sports</a>
+      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Health</a>
+      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">The Debate</a>
+      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Vantage</a>
+      <a class="nav-item nav-link px-2 font-weight-bold text-dark" href="#">Weather</a>
+      </div>
+      <input id="search-bar" type="text" placeholder="Search" class="border-0 float-right">
+      <i class="fas fa-search align-self-center"></i>
+    </div>
+  </div>
+</nav>
 
     <nav class="bottom-nav"></nav>
   </header>
