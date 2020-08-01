@@ -18,72 +18,161 @@
 
 <body>
 
+  <div class="container">
+
   <header>
 
-      <nav class="row text-white container-fluid px-2 py-2 d-flex justify-content-space-between">
+    <nav class="row text-white container-fluid px-2 py-2 d-flex justify-content-space-between">
 
 
-        <!-- weather- date -->
+      <!-- weather- date -->
 
-        <div class="weather-date col-lg-3 py-3 d-none d-lg-block">
+      <div class="weather-date col-lg-3 py-3 d-none d-lg-block">
 
-          <div>
-            <a class="text-white" href="#">
-              <i class="fas fa-cloud-sun-rain"></i><span>31°</span><span>Lorem impsum</span>
-            </a>
-          </div>
-
-          <div>
-            <div>Fri, Jul 31, 2020</div>
-          </div>
-        </div>
-  
-  
-        <!-- logo -->
-  
-        <div class="col-3 col-md-6 col-5 d-flex justify-content-center align-items-center">
-          <img src="img/logo.svg" alt="Newsweek Logo" class="mw-100">
+        <div>
+          <a class="text-white" href="#">
+            <i class="fas fa-cloud-sun-rain"></i><span>31°</span><span>Lorem impsum</span>
+          </a>
         </div>
 
-        <!-- login -->
-  
-        <div class=" col-lg-3 col-md-6 col-6 d-flex align-items-center">
-          <i class="fas fa-user fa-md-2x d-md-none"></i>
-          <button class="display-5 font-weight-bolder m-0 bg-transparent border-0 text-white d-none d-md-block">LOGIN</button>
-          <div>
-            <button type="button" class="btn btn-warning font-weight-bolder rounded-pill mx-3">SUBSCRIBE</button>
-          </div>
-          <i class="bars-icon fas fa-bars d-lg-none fa-2x "></i>
+        <div>
+          <div>Fri, Jul 31, 2020</div>
         </div>
-  
-      </nav>
-
-
-<!-- middle nav -->
-
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="navbar-nav d-lg-flex d-none">
-      <div id="medium-nav" class="d-flex">
-      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">U.S</a>
-      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">World</a>
-      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Business</a>
-      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Tech & Science</a>
-      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Culture</a>
-      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">News Geek</a>
-      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Sports</a>
-      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Health</a>
-      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">The Debate</a>
-      <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Vantage</a>
-      <a class="nav-item nav-link px-2 font-weight-bold text-dark" href="#">Weather</a>
       </div>
-      <input id="search-bar" type="text" placeholder="Search" class="border-0 float-right">
-      <i class="fas fa-search align-self-center"></i>
-    </div>
-  </div>
-</nav>
+
+
+      <!-- logo -->
+
+      <div class="col-3 col-md-6 col-5 d-flex justify-content-center align-items-center">
+        <img src="img/logo.svg" alt="Newsweek Logo" class="mw-100">
+      </div>
+
+      <!-- login -->
+
+      <div class=" col-lg-3 col-md-6 col-6 d-flex align-items-center">
+        <i class="fas fa-user fa-md-2x d-md-none"></i>
+        <button
+          class="display-5 font-weight-bolder m-0 bg-transparent border-0 text-white d-none d-md-block">LOGIN</button>
+        <div>
+          <button type="button" class="btn btn-warning font-weight-bolder rounded-pill mx-3">SUBSCRIBE</button>
+        </div>
+        <i class="bars-icon fas fa-bars d-lg-none fa-2x "></i>
+      </div>
+
+    </nav>
+
+
+    <!-- middle nav -->
+
+    <nav id="medium-nav" class="navbar navbar-expand-lg bg-white">
+      <div class="navbar-nav d-lg-flex flex-row-reverse d-none">
+        <i class="fas fa-search align-self-center"></i>
+        <input id="search-bar" type="text" placeholder="Search" class="float-right">
+
+        <div id="medium-nav-items">
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">U.S</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">World</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Business</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Tech & Science</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Culture</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">News Geek</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Sports</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Health</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">The Debate</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Vantage</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark" href="#">Weather</a>
+        </div>
+
+      </div>
+
+    </nav>
 
     <nav class="bottom-nav"></nav>
   </header>
+
+  <!-- showcase -->
+
+  <main class="p-3">
+
+    <section id="showcase" class="mb-4">
+
+
+
+      <div class="row">
+
+        <div class="col-3">
+
+          <h3 class="showcase-title text-uppercase">Featured Stories</h3>
+
+          <div class="card border-0 mb-3">
+            <figure class="position-relative">
+              <img src="img/image1.jpg" alt="showcase-image" class="w-100">
+              <figcaption
+                class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">U.S.
+              </figcaption>
+            </figure>
+            <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to Build Border Wall</a>
+            <p class="text-dark h6">"We'll be back before the Supreme Court soon to put a stop to Trump's xenophobic border wall once and for
+              all," said ACLU attorney Dror Ladin on Friday.</p>
+          </div>
+
+          <div class="card border-0 mb-3">
+            <figure class="position-relative">
+              <img src="img/image1.jpg" alt="showcase-image" class="w-100">
+              <figcaption
+                class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">U.S.
+              </figcaption>
+            </figure>
+            <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to Build Border Wall</a>
+            <p class="text-dark h6">"We'll be back before the Supreme Court soon to put a stop to Trump's xenophobic border wall once and for
+              all," said ACLU attorney Dror Ladin on Friday.</p>
+          </div>
+
+          <div class="card border-0 mb-3">
+            <figure class="position-relative">
+              <img src="img/image1.jpg" alt="showcase-image" class="w-100">
+              <figcaption
+                class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">U.S.
+              </figcaption>
+            </figure>
+            <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to Build Border Wall</a>
+            <p class="text-dark h6">"We'll be back before the Supreme Court soon to put a stop to Trump's xenophobic border wall once and for
+              all," said ACLU attorney Dror Ladin on Friday.</p>
+          </div>
+
+          <div class="card border-0 mb-3">
+            <figure class="position-relative">
+              <img src="img/image1.jpg" alt="showcase-image" class="w-100">
+              <figcaption
+                class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">U.S.
+              </figcaption>
+            </figure>
+            <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to Build Border Wall</a>
+            <p class="text-dark h6">"We'll be back before the Supreme Court soon to put a stop to Trump's xenophobic border wall once and for
+              all," said ACLU attorney Dror Ladin on Friday.</p>
+          </div>
+
+          <div class="card border-0">
+            <figure class="position-relative">
+              <img src="img/image1.jpg" alt="showcase-image" class="w-100">
+              <figcaption
+                class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">U.S.
+              </figcaption>
+            </figure>
+            <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to Build Border Wall</a>
+            <p class="text-dark h6">"We'll be back before the Supreme Court soon to put a stop to Trump's xenophobic border wall once and for
+              all," said ACLU attorney Dror Ladin on Friday.</p>
+          </div>
+
+        </div>
+
+        <div class="col-6">b</div>
+        <div class="col-3">c</div>
+      </div>
+
+
+    </section>
+  </main>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -96,6 +185,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
   </script>
+
+
+</div>
 </body>
 
 </html>

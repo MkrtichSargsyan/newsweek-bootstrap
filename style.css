@@ -4,62 +4,122 @@
     ==============================================
 */
 
-:root {
-  --color-red: #f42;
-  --bg-color-red: #f42;
-  --color-grey:#aaa;
-}
+ :root {
+   --color-red: #f42;
+   --color-grey: #aaa;
+   --color-figcaption: #f72210;
+   --bg-figcaption: #ffffffe6;
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+ }
+
+ *,
+ *::before,
+ *::after {
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   outline: none;
+ }
 
 
-/*
+ /*
     ==============================================
                 ****** GLOBAL ******
     ==============================================
 */
-body {
-  font-family: 'Roboto Condensed', sans-serif;
-}
+ body {
+   font-family: 'Roboto Condensed', sans-serif;
+ }
 
-a {
-  font-size: 18px;
-}
+ p {
+   font-family: Arial, Helvetica, sans-serif;
+ }
 
-a:hover {
- color: #f72210;
-}
+ a {
+   text-decoration: none;
+   color: black;
+ }
 
-/*
+ a:hover {
+   color: #f72210;
+ }
+
+ /*
     ==============================================
                 ****** HEAADER ******
     ==============================================
 */
 
-.bars-icon{
-  color: var(--color-grey);
-}
 
-.container-fluid {
-  background-color: #f72210;
-}
+ .bars-icon {
+   color: var(--color-grey);
+ }
 
-#search-bar {
-  width: 60px;
-}
+ .container-fluid {
+   background-color: #f72210;
+ }
 
-#search-bar:active ~ #medium-nav {
-  border:solid 1px red;
-}
+ #search-bar {
+   width: 60px;
+   background-color: inherit;
+   border: none
+ }
 
-#search-bar:active {
-  width: 100%;
-}
+ #medium-nav {
+
+   border-bottom: 1px solid #ccc;
+
+ }
+
+ #medium-nav-items {
+   display: flex;
+ }
+
+ #search-bar:active~#medium-nav-items,
+ #search-bar:focus~#medium-nav-items {
+   display: none;
+   width: 100%;
+ }
+
+ #search-bar:active~#medium-nav>div,
+ #search-bar:focus~#medium-nav>div {
+   width: 100%;
+ }
+
+ #search-bar:active,
+ #search-bar:focus {
+   width: 100%;
+   border: none;
+ }
+
+
+ /*
+    ==============================================
+                ****** SHOWCASE ******
+    ==============================================
+*/
+
+
+ figure figcaption {
+   background-color: var(--bg-figcaption);
+   color: var(--color-figcaption);
+ }
+
+ .showcase-title {
+   color: var(--color-grey);
+   font-weight: bold;
+   font-size: 14px;
+ }
+
+ .card a {
+   font-size: 18px;
+   font-size: 24px;
+   line-height: 1;
+ }
+
+ .card a:hover {
+   color: black;
+   text-decoration-color: var(--color-red)
+ }
