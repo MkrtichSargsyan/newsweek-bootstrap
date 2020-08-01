@@ -123,3 +123,7 @@
    color: black;
    text-decoration-color: var(--color-red)
  }
+
+ #my-turn {
+  height: 150px
+ }
