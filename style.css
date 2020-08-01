@@ -137,7 +137,6 @@
 
  #debate {
    position: relative;
-   border-bottom: 4px solid #d9d9d9;
  }
 
  #debate a {
@@ -151,7 +150,6 @@
  }
 
  #vs{
-   padding: 10px;
    border-radius: 50%;
    background-color: black;
    left: 50%;
