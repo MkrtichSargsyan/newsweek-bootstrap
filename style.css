@@ -49,6 +49,12 @@
    color: #f72210;
  }
 
+ img{
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+ }
+
  /*
     ==============================================
                 ****** HEAADER ******
@@ -63,10 +69,6 @@
  .bars-icon {
    color: var(--color-grey);
  }
-
- /* .container-fluid {
-   background-color: #f72210;
- } */
 
  #search-bar {
    width: 60px;
@@ -131,9 +133,6 @@
    text-decoration-color: var(--color-red)
  }
 
- #my-turn {
-   height: 150px
- }
 
  #debate {
    position: relative;
@@ -154,4 +153,11 @@
    background-color: black;
    left: 50%;
    top: 43%;
+ }
+
+
+ /* my-turn-row */
+
+ #my-turn-row article figure{
+    /* height: 150%; */
  }

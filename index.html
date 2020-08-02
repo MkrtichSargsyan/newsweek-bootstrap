@@ -1,833 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
 
-    <title>Hello, world!</title>
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
 
-  <body class="container">
-    <header>
-      <nav id="header-top" class="row text-white px-2 py-2 m-0">
-        <!-- weather- date -->
+  <title>Hello, world!</title>
+</head>
 
-        <div class="weather-date col-lg-3 py-3 d-none d-lg-block">
-          <div>
-            <a class="text-white" href="#">
-              <i class="fas fa-cloud-sun-rain"></i><span>31°</span
-              ><span>Lorem impsum</span>
-            </a>
-          </div>
+<body class="container-fluid">
+  <header>
+    <nav id="header-top" class="row d-flex justify-content-between text-white py-2">
+      <!-- weather- date -->
 
-          <div>
-            <div>Fri, Jul 31, 2020</div>
-          </div>
+      <div class="weather-date col-lg-3 py-3 d-none d-lg-block">
+        <div>
+          <a class="text-white" href="#">
+            <i class="fas fa-cloud-sun-rain"></i><span>31°</span><span>Lorem impsum</span>
+          </a>
         </div>
 
-        <!-- logo -->
-
-        <div
-          class="col-3 col-md-6 col-5 d-flex justify-content-center align-items-center"
-        >
-          <img
-            src="img/logo.svg"
-            alt="Newsweek Logo"
-            class="mw-100"
-          />
+        <div>
+          <div>Fri, Jul 31, 2020</div>
         </div>
+      </div>
 
-        <!-- login -->
+      <!-- logo -->
 
-        <div
-          class="col-lg-3 col-md-6 col-6 d-flex align-items-center"
-        >
-          <i class="fas fa-user fa-md-2x d-md-none"></i>
-          <button
-            class="display-5 font-weight-bolder m-0 bg-transparent border-0 text-white d-none d-md-block"
-          >
-            LOGIN
+      <div class="col-3 col-md-6 col-5 d-flex justify-content-center align-items-center">
+        <img src="img/logo.svg" alt="Newsweek Logo" class="mw-100" />
+      </div>
+
+      <!-- login -->
+
+      <div class="col-lg-3 col-md-6 col-6 d-flex align-items-center justify-content-end">
+        <i class="fas fa-user fa-md-2x d-md-none"></i>
+        <button class="display-5 font-weight-bolder m-0 bg-transparent border-0 text-white d-none d-md-block">
+          LOGIN
+        </button>
+        <div>
+          <button type="button" class="btn btn-warning font-weight-bolder rounded-pill mx-3">
+            SUBSCRIBE
           </button>
-          <div>
-            <button
-              type="button"
-              class="btn btn-warning font-weight-bolder rounded-pill mx-3"
-            >
-              SUBSCRIBE
-            </button>
-          </div>
-          <i class="bars-icon fas fa-bars d-lg-none fa-2x"></i>
         </div>
-      </nav>
+        <i class="bars-icon fas fa-bars d-lg-none fa-2x"></i>
+      </div>
+    </nav>
 
-      <!-- middle nav -->
+    <!-- middle nav -->
 
-      <nav id="medium-nav" class="navbar navbar-expand-lg bg-white">
-        <div class="navbar-nav d-lg-flex flex-row-reverse d-none">
-          <i class="fas fa-search align-self-center"></i>
-          <input
-            id="search-bar"
-            type="text"
-            placeholder="Search"
-            class="float-right"
-          />
+    <nav id="medium-nav" class="navbar d-none d-md-block navbar-expand-lg bg-white">
+      <div class="navbar-nav d-lg-flex flex-row-reverse d-none">
+        <i class="fas fa-search align-self-center"></i>
+        <input id="search-bar" type="text" placeholder="Search" class="float-right" />
 
-          <div id="medium-nav-items">
-            <a
-              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
-              href="#"
-              >U.S</a
-            >
-            <a
-              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
-              href="#"
-              >World</a
-            >
-            <a
-              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
-              href="#"
-              >Business</a
-            >
-            <a
-              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
-              href="#"
-              >Tech & Science</a
-            >
-            <a
-              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
-              href="#"
-              >Culture</a
-            >
-            <a
-              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
-              href="#"
-              >News Geek</a
-            >
-            <a
-              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
-              href="#"
-              >Sports</a
-            >
-            <a
-              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
-              href="#"
-              >Health</a
-            >
-            <a
-              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
-              href="#"
-              >The Debate</a
-            >
-            <a
-              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
-              href="#"
-              >Vantage</a
-            >
-            <a
-              class="nav-item nav-link px-2 font-weight-bold text-dark"
-              href="#"
-              >Weather</a
-            >
-          </div>
+        <div id="medium-nav-items">
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">U.S</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">World</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Business</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Tech & Science</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Culture</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">News Geek</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Sports</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Health</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">The Debate</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark border-right" href="#">Vantage</a>
+          <a class="nav-item nav-link px-2 font-weight-bold text-dark" href="#">Weather</a>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <!-- bottom nav -->
+    <!-- bottom nav -->
 
-      <nav class="bottom-nav"></nav>
-    </header>
+    <nav class="bottom-nav"></nav>
+  </header>
 
-    <!-- showcase -->
+  <!-- showcase -->
 
-    <main class="p-3 bg-white">
-      <section id="showcase" class="mb-4">
+  <main class="">
+    <section id="showcase" class="mb-4 row">
+
+      <div id="featured-stories-column" class="bg-white mb-3 p-3 col-md-4 col-lg-3 order-2 order-md-0">
+        <h3 class="showcase-title text-uppercase">
+          Featured Stories
+        </h3>
+
+        <div class="card border-0 mb-3">
+          <figure class="position-relative">
+            <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
+            <figcaption
+              class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+              U.S.
+            </figcaption>
+          </figure>
+          <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
+            Build Border Wall</a>
+          <p class="text-dark h6">
+            "We'll be back before the Supreme Court soon to put a
+            stop to Trump's xenophobic border wall once and for
+            all," said ACLU attorney Dror Ladin on Friday.
+          </p>
+        </div>
+
+        <div class="card border-0 mb-3">
+          <figure class="position-relative">
+            <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
+            <figcaption
+              class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+              U.S.
+            </figcaption>
+          </figure>
+          <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
+            Build Border Wall</a>
+          <p class="text-dark h6">
+            "We'll be back before the Supreme Court soon to put a
+            stop to Trump's xenophobic border wall once and for
+            all," said ACLU attorney Dror Ladin on Friday.
+          </p>
+        </div>
+
+        <div class="card border-0 mb-3">
+          <figure class="position-relative">
+            <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
+            <figcaption
+              class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+              U.S.
+            </figcaption>
+          </figure>
+          <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
+            Build Border Wall</a>
+          <p class="text-dark h6">
+            "We'll be back before the Supreme Court soon to put a
+            stop to Trump's xenophobic border wall once and for
+            all," said ACLU attorney Dror Ladin on Friday.
+          </p>
+        </div>
+
+        <div class="card border-0 mb-3">
+          <figure class="position-relative">
+            <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
+            <figcaption
+              class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+              U.S.
+            </figcaption>
+          </figure>
+          <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
+            Build Border Wall</a>
+          <p class="text-dark h6">
+            "We'll be back before the Supreme Court soon to put a
+            stop to Trump's xenophobic border wall once and for
+            all," said ACLU attorney Dror Ladin on Friday.
+          </p>
+        </div>
+
+        <div class="card border-0">
+          <figure class="position-relative">
+            <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
+            <figcaption
+              class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+              U.S.
+            </figcaption>
+          </figure>
+          <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
+            Build Border Wall</a>
+          <p class="text-dark h6">
+            "We'll be back before the Supreme Court soon to put a
+            stop to Trump's xenophobic border wall once and for
+            all," said ACLU attorney Dror Ladin on Friday.
+          </p>
+        </div>
+      </div>
+
+      <div id='top-story' class="bg-white mb-3 p-3 order-first order-md-0">
+        <h3 class="showcase-title text-uppercase">
+          TOP STORY
+        </h3>
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/image2.jpg" alt="showcase-image" class="w-100" />
+            <figcaption
+              class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+              U.S.
+            </figcaption>
+          </figure>
+          <a class="mb-2" href="#">White House Commits to Unemployment Extension As
+            Negotiations Stall</a>
+          <p>
+            As a critical deadline looms, White House officials
+            are stressing that they want to extend enhanced
+            unemployment benefits that went into effect earlier
+            this year in response to the coronavirus pandemic but
+            negotiations with Democratic leaders, so far, have
+            fallen short.
+          </p>
+        </div>
+      </div>
+
+      <div id="my-turn-row" class="bg-white p-3 order-5 order-md-0">
+        <h3 class="showcase-title">MY TURN</h3>
+
         <div class="row">
-          <div id="featured-stories-column" class="col-lg col-md-4">
-            <h3 class="showcase-title text-uppercase">
-              Featured Stories
-            </h3>
 
-            <div class="card border-0 mb-3">
-              <figure class="position-relative">
-                <img
-                  src="img/image1.jpg"
-                  alt="showcase-image"
-                  class="w-100"
-                />
-                <figcaption
-                  class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center"
-                >
-                  U.S.
-                </figcaption>
-              </figure>
-              <a class="mb-2" href="#"
-                >Supreme Court Allows Trump to Use Pentagon Funds to
-                Build Border Wall</a
-              >
-              <p class="text-dark h6">
-                "We'll be back before the Supreme Court soon to put a
-                stop to Trump's xenophobic border wall once and for
-                all," said ACLU attorney Dror Ladin on Friday.
-              </p>
-            </div>
+          <figure class="col-md-4 mb-4">
+            <img src="img/image2.jpg" alt="showcase-image" />
+            <figcaption class="showcase-title mt-2">
+              'My Son Is Autistic—The Pandemic Has Separated Us for 4 Months'
+            </figcaption>
+          </figure>
 
-            <div class="card border-0 mb-3">
-              <figure class="position-relative">
-                <img
-                  src="img/image1.jpg"
-                  alt="showcase-image"
-                  class="w-100"
-                />
-                <figcaption
-                  class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center"
-                >
-                  U.S.
-                </figcaption>
-              </figure>
-              <a class="mb-2" href="#"
-                >Supreme Court Allows Trump to Use Pentagon Funds to
-                Build Border Wall</a
-              >
-              <p class="text-dark h6">
-                "We'll be back before the Supreme Court soon to put a
-                stop to Trump's xenophobic border wall once and for
-                all," said ACLU attorney Dror Ladin on Friday.
-              </p>
-            </div>
+          <figure class="col-md-4 my-4">
+            <img src="img/image2.jpg" alt="showcase-image" />
+            <figcaption class="showcase-title mt-2">'My Son Is Autistic—The Pandemic Has Separated Us
+              for 4 Months'
+            </figcaption>
+          </figure>
 
-            <div class="card border-0 mb-3">
-              <figure class="position-relative">
-                <img
-                  src="img/image1.jpg"
-                  alt="showcase-image"
-                  class="w-100"
-                />
-                <figcaption
-                  class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center"
-                >
-                  U.S.
-                </figcaption>
-              </figure>
-              <a class="mb-2" href="#"
-                >Supreme Court Allows Trump to Use Pentagon Funds to
-                Build Border Wall</a
-              >
-              <p class="text-dark h6">
-                "We'll be back before the Supreme Court soon to put a
-                stop to Trump's xenophobic border wall once and for
-                all," said ACLU attorney Dror Ladin on Friday.
-              </p>
-            </div>
+          <figure class="col-md-4 my-4">
+            <img src="img/image2.jpg" alt="showcase-image" />
+            <figcaption class="showcase-title mt-2">'My Son Is Autistic—The Pandemic Has Separated Us
+              for 4 Months'
+            </figcaption>
+          </figure>
 
-            <div class="card border-0 mb-3">
-              <figure class="position-relative">
-                <img
-                  src="img/image1.jpg"
-                  alt="showcase-image"
-                  class="w-100"
-                />
-                <figcaption
-                  class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center"
-                >
-                  U.S.
-                </figcaption>
-              </figure>
-              <a class="mb-2" href="#"
-                >Supreme Court Allows Trump to Use Pentagon Funds to
-                Build Border Wall</a
-              >
-              <p class="text-dark h6">
-                "We'll be back before the Supreme Court soon to put a
-                stop to Trump's xenophobic border wall once and for
-                all," said ACLU attorney Dror Ladin on Friday.
-              </p>
-            </div>
+        </div>
+      </div>
 
-            <div class="card border-0">
-              <figure class="position-relative">
-                <img
-                  src="img/image1.jpg"
-                  alt="showcase-image"
-                  class="w-100"
-                />
-                <figcaption
-                  class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center"
-                >
-                  U.S.
-                </figcaption>
-              </figure>
-              <a class="mb-2" href="#"
-                >Supreme Court Allows Trump to Use Pentagon Funds to
-                Build Border Wall</a
-              >
-              <p class="text-dark h6">
-                "We'll be back before the Supreme Court soon to put a
-                stop to Trump's xenophobic border wall once and for
-                all," said ACLU attorney Dror Ladin on Friday.
-              </p>
-            </div>
-          </div>
+      <div id="CULTURE-TRAVEL-row" class="bg-white p-3 order-6 order-md-0">
+        <h3 class="showcase-title">CULTURE & TRAVEL</h3>
 
-          <div class="col-lg-5 col-md-8">
+        <div class="row">
 
-            <div id='top-story'>
-              <h3 class="showcase-title text-uppercase">
-                TOP STORY
-              </h3>
-              <div class="card border-0 mb-3 order-first">
-                <figure class="position-relative">
-                  <img
-                    src="img/image2.jpg"
-                    alt="showcase-image"
-                    class="w-100"
-                  />
-                  <figcaption
-                    class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center"
-                  >
-                    U.S.
-                  </figcaption>
-                </figure>
-                <a class="mb-2" href="#"
-                  >White House Commits to Unemployment Extension As
-                  Negotiations Stall</a
-                >
-                <p>
-                  As a critical deadline looms, White House officials
-                  are stressing that they want to extend enhanced
-                  unemployment benefits that went into effect earlier
-                  this year in response to the coronavirus pandemic but
-                  negotiations with Democratic leaders, so far, have
-                  fallen short.
-                </p>
-              </div>
-            </div>
-           
-            <div id="my-turn">
-              <h3 class="showcase-title text-uppercase">MY TURN</h3>
-              <div class="row">
-                <article class="col-4">
-                  <figure class="position-relative">
-                    <img
-                      id="my-turn"
-                      src="img/image2.jpg"
-                      alt="showcase-image"
-                      class="w-100"
-                    />
-                  </figure>
-                  <h3 class="showcase-title">
-                    'My Son Is Autistic—The Pandemic Has Separated Us
-                    for 4 Months'
-                  </h3>
-                </article>
-  
-                <article class="col-4">
-                  <figure class="position-relative">
-                    <img
-                      id="my-turn"
-                      src="img/image2.jpg"
-                      alt="showcase-image"
-                      class="w-100"
-                    />
-                  </figure>
-                  <h3 class="showcase-title">
-                    'My Son Is Autistic—The Pandemic Has Separated Us
-                    for 4 Months'
-                  </h3>
-                </article>
-  
-                <article class="col-4">
-                  <figure class="position-relative">
-                    <img
-                      id="my-turn"
-                      src="img/image2.jpg"
-                      alt="showcase-image"
-                      class="w-100"
-                    />
-                  </figure>
-                  <h3 class="showcase-title">
-                    'My Son Is Autistic—The Pandemic Has Separated Us
-                    for 4 Months'
-                  </h3>
-                </article>
-              </div>
-            </div>
+          <figure class="col-md-4 mb-4">
+            <img src="img/image3.jpg" alt="showcase-image" />
+            <figcaption class="showcase-title mt-2">'My Son Is Autistic—The Pandemic Has Separated Us
+              What It's Like to Travel Across the Country by
+              Amtrak Right Now
+            </figcaption>
+          </figure>
 
-            <div id="CULTURE & TRAVEL">
-              <h3 class="showcase-title text-uppercase">
-                CULTURE & TRAVEL
-              </h3>
-              <div class="row">
-                <article class="col-4">
-                  <figure class="position-relative">
-                    <img
-                      id="my-turn"
-                      src="img/image3.jpg"
-                      alt="showcase-image"
-                      class="w-100"
-                    />
-                  </figure>
-                  <h3 class="showcase-title">
-                    What It's Like to Travel Across the Country by
-                    Amtrak Right Now
-                  </h3>
-                </article>
-  
-                <article class="col-4">
-                  <figure class="position-relative">
-                    <img
-                      id="my-turn"
-                      src="img/image3.jpg"
-                      alt="showcase-image"
-                      class="w-100"
-                    />
-                  </figure>
-                  <h3 class="showcase-title">
-                    What It's Like to Travel Across the Country by
-                    Amtrak Right Now
-                  </h3>
-                </article>
-  
-                <article class="col-4">
-                  <figure class="position-relative">
-                    <img
-                      id="my-turn"
-                      src="img/image3.jpg"
-                      alt="showcase-image"
-                      class="w-100"
-                    />
-                  </figure>
-                  <h3 class="showcase-title">
-                    What It's Like to Travel Across the Country by
-                    Amtrak Right Now
-                  </h3>
-                </article>
-              </div>
-            </div>
-           
-            <div id="MORE STORIES">
-              <h3 class="showcase-title text-uppercase pb-3 mt-3">
-                MORE STORIES
-              </h3>
-  
-              <div class="row border-bottom border-top py-3">
-                <img
-                  class="col-3 pb-4"
-                  src="img/image4.jpg"
-                  alt="showcase-image"
-                />
-                <div class="col-8">
-                  <a class="mb-2" href="#"
-                    >Fauci, Birx Say Hydroxychloroquine Has No Benefit
-                    Against COVID-19</a
-                  >
-                  <p>
-                    President Donald Trump has repeatedly touted the
-                    anti-malaria drug as a COVID-19 treatment, despite a
-                    lack of evidence.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="row border-bottom border-top py-3">
-                <img
-                  class="col-3 pb-4"
-                  src="img/image4.jpg"
-                  alt="showcase-image"
-                />
-                <div class="col-8">
-                  <a class="mb-2" href="#"
-                    >Fauci, Birx Say Hydroxychloroquine Has No Benefit
-                    Against COVID-19</a
-                  >
-                  <p>
-                    President Donald Trump has repeatedly touted the
-                    anti-malaria drug as a COVID-19 treatment, despite a
-                    lack of evidence.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="row border-bottom border-top py-3">
-                <img
-                  class="col-3 pb-4"
-                  src="img/image4.jpg"
-                  alt="showcase-image"
-                />
-                <div class="col-8">
-                  <a class="mb-2" href="#"
-                    >Fauci, Birx Say Hydroxychloroquine Has No Benefit
-                    Against COVID-19</a
-                  >
-                  <p>
-                    President Donald Trump has repeatedly touted the
-                    anti-malaria drug as a COVID-19 treatment, despite a
-                    lack of evidence.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="row border-bottom border-top py-3">
-                <img
-                  class="col-3 pb-4"
-                  src="img/image4.jpg"
-                  alt="showcase-image"
-                />
-                <div class="col-8">
-                  <a class="mb-2" href="#"
-                    >Fauci, Birx Say Hydroxychloroquine Has No Benefit
-                    Against COVID-19</a
-                  >
-                  <p>
-                    President Donald Trump has repeatedly touted the
-                    anti-malaria drug as a COVID-19 treatment, despite a
-                    lack of evidence.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="row border-bottom border-top py-3">
-                <img
-                  class="col-3 pb-4"
-                  src="img/image4.jpg"
-                  alt="showcase-image"
-                />
-                <div class="col-8">
-                  <a class="mb-2" href="#"
-                    >Fauci, Birx Say Hydroxychloroquine Has No Benefit
-                    Against COVID-19</a
-                  >
-                  <p>
-                    President Donald Trump has repeatedly touted the
-                    anti-malaria drug as a COVID-19 treatment, despite a
-                    lack of evidence.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="row border-bottom border-top py-3">
-                <img
-                  class="col-3 pb-4"
-                  src="img/image4.jpg"
-                  alt="showcase-image"
-                />
-                <div class="col-8">
-                  <a class="mb-2" href="#"
-                    >Fauci, Birx Say Hydroxychloroquine Has No Benefit
-                    Against COVID-19</a
-                  >
-                  <p>
-                    President Donald Trump has repeatedly touted the
-                    anti-malaria drug as a COVID-19 treatment, despite a
-                    lack of evidence.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="row border-bottom border-top py-3">
-                <img
-                  class="col-3 pb-4"
-                  src="img/image4.jpg"
-                  alt="showcase-image"
-                />
-                <div class="col-8">
-                  <a class="mb-2" href="#"
-                    >Fauci, Birx Say Hydroxychloroquine Has No Benefit
-                    Against COVID-19</a
-                  >
-                  <p>
-                    President Donald Trump has repeatedly touted the
-                    anti-malaria drug as a COVID-19 treatment, despite a
-                    lack of evidence.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="row border-bottom border-top py-3">
-                <img
-                  class="col-3 pb-4"
-                  src="img/image4.jpg"
-                  alt="showcase-image"
-                />
-                <div class="col-8">
-                  <a class="mb-2" href="#"
-                    >Fauci, Birx Say Hydroxychloroquine Has No Benefit
-                    Against COVID-19</a
-                  >
-                  <p>
-                    President Donald Trump has repeatedly touted the
-                    anti-malaria drug as a COVID-19 treatment, despite a
-                    lack of evidence.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="row border-bottom border-top py-3">
-                <img
-                  class="col-3 pb-4"
-                  src="img/image4.jpg"
-                  alt="showcase-image"
-                />
-                <div class="col-8">
-                  <a class="mb-2" href="#"
-                    >Fauci, Birx Say Hydroxychloroquine Has No Benefit
-                    Against COVID-19</a
-                  >
-                  <p>
-                    President Donald Trump has repeatedly touted the
-                    anti-malaria drug as a COVID-19 treatment, despite a
-                    lack of evidence.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="row border-bottom border-top py-3">
-                <img
-                  class="col-3 pb-4"
-                  src="img/image4.jpg"
-                  alt="showcase-image"
-                />
-                <div class="col-8">
-                  <a class="mb-2" href="#"
-                    >Fauci, Birx Say Hydroxychloroquine Has No Benefit
-                    Against COVID-19</a
-                  >
-                  <p>
-                    President Donald Trump has repeatedly touted the
-                    anti-malaria drug as a COVID-19 treatment, despite a
-                    lack of evidence.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="row border-bottom border-top py-3">
-                <img
-                  class="col-3 pb-4"
-                  src="img/image4.jpg"
-                  alt="showcase-image"
-                />
-                <div class="col-8">
-                  <a class="mb-2" href="#"
-                    >Fauci, Birx Say Hydroxychloroquine Has No Benefit
-                    Against COVID-19</a
-                  >
-                  <p>
-                    President Donald Trump has repeatedly touted the
-                    anti-malaria drug as a COVID-19 treatment, despite a
-                    lack of evidence.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="row border-bottom border-top py-3">
-                <img
-                  class="col-3 pb-4"
-                  src="img/image4.jpg"
-                  alt="showcase-image"
-                />
-                <div class="col-8">
-                  <a class="mb-2" href="#"
-                    >Fauci, Birx Say Hydroxychloroquine Has No Benefit
-                    Against COVID-19</a
-                  >
-                  <p>
-                    President Donald Trump has repeatedly touted the
-                    anti-malaria drug as a COVID-19 treatment, despite a
-                    lack of evidence.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-          
-          </div>
+          <figure class="col-md-4 my-4">
+            <img src="img/image3.jpg" alt="showcase-image" />
+            <figcaption class="showcase-title mt-2">'My Son Is Autistic—The Pandemic Has Separated Us
+              What It's Like to Travel Across the Country by
+              Amtrak Right Now
+            </figcaption>
+          </figure>
 
-          <div id="the-debate-column" class="col-lg col-md-12">
-            <h3 class="showcase-title text-uppercase">THE DEBATE</h3>
+          <figure class="col-md-4 my-4">
+            <img src="img/image3.jpg" alt="showcase-image" />
+            <figcaption class="showcase-title mt-2">'My Son Is Autistic—The Pandemic Has Separated Us
+              What It's Like to Travel Across the Country by
+              Amtrak Right Now
+            </figcaption>
+          </figure>
 
-            <div id="debate" class="position-relative">
-              <article class="border-bottom border-top row my-1 pt-3">
-                <figure class="col-3 p-0">
-                  <img
-                    src="img/image15.jpg"
-                    alt="avatar"
-                    class="rounded-circle w-75"
-                  />
-                </figure>
-                <div class="col-8 ml-1  p-0 row flex-column">
-                  <a class="mb-1" href="#"
-                    >Public Safety Requires Thinking Outside the
-                    Cell</a
-                  >
-                  <p>BY <strong>MARC LEVIN</strong></p>
-                </div>
-              </article>
+        </div>
+      </div>
 
-              <article class="border-top border-bottom row pt-3 my-1">
-                <div class="col-9 ml-1 row flex-column">
-                  <a class="mb-1" href="#"
-                    >Public Safety Requires Thinking Outside the
-                    Cell</a
-                  >
-                  <p>BY <strong>MARC LEVIN</strong></p>
-                </div>
-                <figure class="col-3 p-0">
-                  <img
-                    src="img/image15.jpg"
-                    alt="avatar"
-                    class="rounded-circle w-75"
-                  />
-                </figure>
-              </article>
+      <div id="MORE STORIES-row" class="bg-white mb-3 p-3 order-4 order-md-0">
+        <h3 class="showcase-title text-uppercase pb-3 mt-3">
+          MORE STORIES
+        </h3>
 
-              <div
-                id="vs"
-                class="position-absolute text-white p-1 rounded-circle"
-              >
-                VS
-              </div>
-            </div>
-
-           
-
-              <h3 class="showcase-title py-3">OPINION</h3>
-
-            
-              <article class="border-bottom row my-1 pt-3">
-                <figure class="col-3 p-0">
-                  <img
-                    src="img/image15.jpg"
-                    alt="avatar"
-                    class="rounded-circle w-75"
-                  />
-                </figure>
-                <div class="col-8 ml-1  p-0 row flex-column">
-                  <a class="mb-1" href="#"
-                    >Public Safety Requires Thinking Outside the
-                    Cell</a
-                  >
-                  <p>BY <strong>MARC LEVIN</strong></p>
-                </div>
-              </article>
-
-              <article class="border-bottom row my-1 pt-3">
-                <figure class="col-3 p-0">
-                  <img
-                    src="img/image15.jpg"
-                    alt="avatar"
-                    class="rounded-circle w-75"
-                  />
-                </figure>
-                <div class="col-8 ml-1  p-0 row flex-column">
-                  <a class="mb-1" href="#"
-                    >Public Safety Requires Thinking Outside the
-                    Cell</a
-                  >
-                  <p>BY <strong>MARC LEVIN</strong></p>
-                </div>
-              </article>
-
-              <article class="border-bottom row my-1 pt-3">
-                <figure class="col-3 p-0">
-                  <img
-                    src="img/image15.jpg"
-                    alt="avatar"
-                    class="rounded-circle w-75"
-                  />
-                </figure>
-                <div class="col-8 ml-1  p-0 row flex-column">
-                  <a class="mb-1" href="#"
-                    >Public Safety Requires Thinking Outside the
-                    Cell</a
-                  >
-                  <p>BY <strong>MARC LEVIN</strong></p>
-                </div>
-              </article>
-
-              <article class="border-bottom row my-1 pt-3">
-                <figure class="col-3 p-0">
-                  <img
-                    src="img/image15.jpg"
-                    alt="avatar"
-                    class="rounded-circle w-75"
-                  />
-                </figure>
-                <div class="col-8 ml-1  p-0 row flex-column">
-                  <a class="mb-1" href="#"
-                    >Public Safety Requires Thinking Outside the
-                    Cell</a
-                  >
-                  <p>BY <strong>MARC LEVIN</strong></p>
-                </div>
-              </article>
-
-              <article class="row my-1 pt-3">
-                <figure class="col-3 p-0">
-                  <img
-                    src="img/image15.jpg"
-                    alt="avatar"
-                    class="rounded-circle w-75"
-                  />
-                </figure>
-                <div class="col-8 ml-1  p-0 row flex-column">
-                  <a class="mb-1" href="#"
-                    >Public Safety Requires Thinking Outside the
-                    Cell</a
-                  >
-                  <p>BY <strong>MARC LEVIN</strong></p>
-                </div>
-              </article>
-
-              
-            <div class="row border bg-light order-last col-lg-12 col-sm-6 m-auto">
-              <img class="w-25 col-2 mt-3 mb-3 pr-0" src="img/n.png" alt="Newsletter logo">
-              <h5 class="font-weight-bolder mt-3 pr-1 col-10">START YOUR DAY WITH OUR TOP 5 ARTICLES</h5>
-              <input class="border my-1 mx-3 p-1 w-100" type="email" name="email" id="" placeholder="Email...">
-              <button type="submit" class="mt-1 p-1 mb-3 mx-3 border-0 text-white w-100 font-weight-bold bg-danger">FREE SIGN-UP ></button>
-            </div>
-
-
-      
+        <div class="row border-bottom border-top py-3">
+          <img class="col-3 pb-4" src="img/image4.jpg" alt="showcase-image" />
+          <div class="col-8">
+            <a class="mb-2" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+              Against COVID-19</a>
+            <p>
+              President Donald Trump has repeatedly touted the
+              anti-malaria drug as a COVID-19 treatment, despite a
+              lack of evidence.
+            </p>
           </div>
         </div>
-      </section>
-    </main>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <div class="row border-bottom border-top py-3">
+          <img class="col-3 pb-4" src="img/image4.jpg" alt="showcase-image" />
+          <div class="col-8">
+            <a class="mb-2" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+              Against COVID-19</a>
+            <p>
+              President Donald Trump has repeatedly touted the
+              anti-malaria drug as a COVID-19 treatment, despite a
+              lack of evidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="row border-bottom border-top py-3">
+          <img class="col-3 pb-4" src="img/image4.jpg" alt="showcase-image" />
+          <div class="col-8">
+            <a class="mb-2" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+              Against COVID-19</a>
+            <p>
+              President Donald Trump has repeatedly touted the
+              anti-malaria drug as a COVID-19 treatment, despite a
+              lack of evidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="row border-bottom border-top py-3">
+          <img class="col-3 pb-4" src="img/image4.jpg" alt="showcase-image" />
+          <div class="col-8">
+            <a class="mb-2" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+              Against COVID-19</a>
+            <p>
+              President Donald Trump has repeatedly touted the
+              anti-malaria drug as a COVID-19 treatment, despite a
+              lack of evidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="row border-bottom border-top py-3">
+          <img class="col-3 pb-4" src="img/image4.jpg" alt="showcase-image" />
+          <div class="col-8">
+            <a class="mb-2" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+              Against COVID-19</a>
+            <p>
+              President Donald Trump has repeatedly touted the
+              anti-malaria drug as a COVID-19 treatment, despite a
+              lack of evidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="row border-bottom border-top py-3">
+          <img class="col-3 pb-4" src="img/image4.jpg" alt="showcase-image" />
+          <div class="col-8">
+            <a class="mb-2" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+              Against COVID-19</a>
+            <p>
+              President Donald Trump has repeatedly touted the
+              anti-malaria drug as a COVID-19 treatment, despite a
+              lack of evidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="row border-bottom border-top py-3">
+          <img class="col-3 pb-4" src="img/image4.jpg" alt="showcase-image" />
+          <div class="col-8">
+            <a class="mb-2" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+              Against COVID-19</a>
+            <p>
+              President Donald Trump has repeatedly touted the
+              anti-malaria drug as a COVID-19 treatment, despite a
+              lack of evidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="row border-bottom border-top py-3">
+          <img class="col-3 pb-4" src="img/image4.jpg" alt="showcase-image" />
+          <div class="col-8">
+            <a class="mb-2" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+              Against COVID-19</a>
+            <p>
+              President Donald Trump has repeatedly touted the
+              anti-malaria drug as a COVID-19 treatment, despite a
+              lack of evidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="row border-bottom border-top py-3">
+          <img class="col-3 pb-4" src="img/image4.jpg" alt="showcase-image" />
+          <div class="col-8">
+            <a class="mb-2" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+              Against COVID-19</a>
+            <p>
+              President Donald Trump has repeatedly touted the
+              anti-malaria drug as a COVID-19 treatment, despite a
+              lack of evidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="row border-bottom border-top py-3">
+          <img class="col-3 pb-4" src="img/image4.jpg" alt="showcase-image" />
+          <div class="col-8">
+            <a class="mb-2" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+              Against COVID-19</a>
+            <p>
+              President Donald Trump has repeatedly touted the
+              anti-malaria drug as a COVID-19 treatment, despite a
+              lack of evidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="row border-bottom border-top py-3">
+          <img class="col-3 pb-4" src="img/image4.jpg" alt="showcase-image" />
+          <div class="col-8">
+            <a class="mb-2" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+              Against COVID-19</a>
+            <p>
+              President Donald Trump has repeatedly touted the
+              anti-malaria drug as a COVID-19 treatment, despite a
+              lack of evidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="row border-bottom border-top py-3">
+          <img class="col-3 pb-4" src="img/image4.jpg" alt="showcase-image" />
+          <div class="col-8">
+            <a class="mb-2" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+              Against COVID-19</a>
+            <p>
+              President Donald Trump has repeatedly touted the
+              anti-malaria drug as a COVID-19 treatment, despite a
+              lack of evidence.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="the-debate-column" class="bg-white mb-3 p-3 col-md-3 mt-3 order-3 order-md-0">
+        <h3 class="showcase-title text-uppercase">THE DEBATE</h3>
+
+        <div id="debate" class="position-relative">
+          <article class="border-bottom border-top row my-1 pt-3">
+            <figure class="col-3 p-0">
+              <img src="img/image15.jpg" alt="avatar" class="rounded-circle w-75" />
+            </figure>
+            <div class="col-8 ml-1  p-0 row flex-column">
+              <a class="mb-1" href="#">Public Safety Requires Thinking Outside the
+                Cell</a>
+              <p>BY <strong>MARC LEVIN</strong></p>
+            </div>
+          </article>
+
+          <article class="border-top border-bottom row pt-3 my-1">
+            <div class="col-9 ml-1 row flex-column">
+              <a class="mb-1" href="#">Public Safety Requires Thinking Outside the
+                Cell</a>
+              <p>BY <strong>MARC LEVIN</strong></p>
+            </div>
+            <figure class="col-3 p-0">
+              <img src="img/image15.jpg" alt="avatar" class="rounded-circle w-75" />
+            </figure>
+          </article>
+
+          <div id="vs" class="position-absolute text-white p-1 rounded-circle">
+            VS
+          </div>
+        </div>
+
+
+
+        <h3 class="showcase-title py-3">OPINION</h3>
+
+
+        <article class="border-bottom row my-1 pt-3">
+          <figure class="col-3 p-0">
+            <img src="img/image15.jpg" alt="avatar" class="rounded-circle w-75" />
+          </figure>
+          <div class="col-8 ml-1  p-0 row flex-column">
+            <a class="mb-1" href="#">Public Safety Requires Thinking Outside the
+              Cell</a>
+            <p>BY <strong>MARC LEVIN</strong></p>
+          </div>
+        </article>
+
+        <article class="border-bottom row my-1 pt-3">
+          <figure class="col-3 p-0">
+            <img src="img/image15.jpg" alt="avatar" class="rounded-circle w-75" />
+          </figure>
+          <div class="col-8 ml-1  p-0 row flex-column">
+            <a class="mb-1" href="#">Public Safety Requires Thinking Outside the
+              Cell</a>
+            <p>BY <strong>MARC LEVIN</strong></p>
+          </div>
+        </article>
+
+        <article class="border-bottom row my-1 pt-3">
+          <figure class="col-3 p-0">
+            <img src="img/image15.jpg" alt="avatar" class="rounded-circle w-75" />
+          </figure>
+          <div class="col-8 ml-1  p-0 row flex-column">
+            <a class="mb-1" href="#">Public Safety Requires Thinking Outside the
+              Cell</a>
+            <p>BY <strong>MARC LEVIN</strong></p>
+          </div>
+        </article>
+
+        <article class="border-bottom row my-1 pt-3">
+          <figure class="col-3 p-0">
+            <img src="img/image15.jpg" alt="avatar" class="rounded-circle w-75" />
+          </figure>
+          <div class="col-8 ml-1  p-0 row flex-column">
+            <a class="mb-1" href="#">Public Safety Requires Thinking Outside the
+              Cell</a>
+            <p>BY <strong>MARC LEVIN</strong></p>
+          </div>
+        </article>
+
+        <article class="row my-1 pt-3">
+          <figure class="col-3 p-0">
+            <img src="img/image15.jpg" alt="avatar" class="rounded-circle w-75" />
+          </figure>
+          <div class="col-8 ml-1  p-0 row flex-column">
+            <a class="mb-1" href="#">Public Safety Requires Thinking Outside the
+              Cell</a>
+            <p>BY <strong>MARC LEVIN</strong></p>
+          </div>
+        </article>
+
+      </div>
+
+      <div id="sign-up" class="order-last order-md-0 p-4 w-100 bg-white">
+        <div class="row border mb-3 badge-light  col-6 m-auto ">
+          <img class="w-25 col-2 my-3 pr-0" src="img/n.png" alt="Newsletter logo">
+          <h5 class="font-weight-bolder mt-3 pr-1 col-10">START YOUR DAY WITH OUR TOP 5 ARTICLES</h5>
+          <input class="border my-1 mx-3 p-1 w-100" type="email" name="email" id="" placeholder="Email...">
+          <button class="mt-1 p-1 mb-3 mx-3 border-0 text-white w-100 font-weight-bold bg-danger">
+            FREE SIGN-UP >
+          </button>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
