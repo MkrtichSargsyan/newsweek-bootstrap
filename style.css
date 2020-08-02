@@ -49,7 +49,7 @@
    color: #f72210;
  }
 
- img{
+ img {
    width: 100%;
    height: 100%;
    background-size: cover;
@@ -138,26 +138,35 @@
    position: relative;
  }
 
- #debate a {
+ #the-debate-column a {
    font-size: 17px;
    line-height: 21px;
  }
 
- #debate p {
+ #the-debate-column p {
    font-size: 14px;
    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
 
- #vs{
+ #the-debate-column article:first-child {
+   border-top: 4px solid var(--color-grey);
+ }
+
+ #the-debate-column article:nth-child(2) {
+   border-bottom: 4px solid var(--color-grey);
+ }
+
+
+ #vs {
    border-radius: 50%;
    background-color: black;
-   left: 50%;
+   left: calc(50% - 25px);
    top: 43%;
  }
 
 
  /* my-turn-row */
 
- #my-turn-row article figure{
-    /* height: 150%; */
+ #my-turn-row article figure {
+   /* height: 150%; */
  }
