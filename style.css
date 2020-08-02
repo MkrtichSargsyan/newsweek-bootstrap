@@ -165,8 +165,9 @@
  }
 
 
- /* my-turn-row */
+ /* more-storied */
 
- #my-turn-row article figure {
-   /* height: 150%; */
+
+ #more-stories-row img{
+   height: 95px;
  }
