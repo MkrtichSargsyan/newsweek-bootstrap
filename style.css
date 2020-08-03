@@ -164,9 +164,12 @@ figure figcaption {
   top: 43%;
 }
 
-
 /* footer */
 
 #footer-social p{
   font-size: 12px;
+}
+
+.footer-ul {
+  font-family: Arial, Helvetica, sans-serif
 }
