@@ -15,7 +15,7 @@
   <title>Hello, world!</title>
 </head>
 
-<body class="container-fluid">
+<body class="container">
   <header>
     <nav id="header-top" class="row d-flex justify-content-between text-white py-2">
       <!-- weather- date -->
@@ -35,7 +35,7 @@
       <!-- logo -->
 
       <div class="col-3 col-md-6 col-5 d-flex py-1">
-        <img src="img/logo.svg" alt="Newsweek Logo" style="width: 100px; height: 100px;" />
+        <img src="img/logo.svg" alt="Newsweek Logo"/>
       </div>
 
       <!-- login -->
@@ -56,8 +56,8 @@
 
     <!-- middle nav -->
 
-    <nav id="medium-nav" class="navbar d-none d-lg-block navbar-expand-lg bg-white">
-      <div class="navbar-nav d-lg-flex flex-row-reverse d-none">
+    <nav id="medium-nav" class="row d-none d-lg-block bg-white py-2">
+      <div class="navbar-nav d-lg-flex flex-row-reverse justify-content-end d-none">
         <i class="fas fa-search align-self-center"></i>
         <input id="search-bar" type="text" placeholder="Search" class="float-right" />
 
@@ -90,7 +90,7 @@
 
       <!-- featured stories column -->
 
-      <div id="featured-stories-column" class="bg-white mb-3 mb-md-0 p-3 col-md-5 col-lg-3 order-1">
+      <div id="featured-stories-column" class="bg-white mb-3 mb-md-0 p-3 col-md-5 col-lg order-1">
 
 
         <div id='top-story' class="d-md-none bg-white mb-3 order-first order-md-2">
@@ -99,7 +99,7 @@
           </h3>
           <div class="card border-0 mb-3 order-first">
             <figure class="position-relative">
-              <img src="img/image13.jpg" alt="showcase-image" class="w-100" />
+              <img src="img/topstory.jpg" alt="showcase-image" class="w-100" />
               <figcaption
                 class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
                 U.S.
@@ -210,7 +210,7 @@
 
       <!-- top story column -->
 
-      <div id="showcase-middle-column" class="bg-white col-md-7 col-lg-6 d-flex flex-column p-md-0 order-3 order-md-2">
+      <div id="showcase-middle-column" class="bg-white col-md-7 col-lg-5 d-flex flex-column p-md-0 order-3 order-md-2">
 
 
         <div id='top-story' class="d-none d-md-block bg-white p-3 order-md-first">
@@ -219,7 +219,7 @@
           </h3>
           <div class="card border-0 order-first">
             <figure class="position-relative w-100">
-              <img src="img/image13.jpg" alt="showcase-image" class="w-100" />
+              <img src="img/topstory.jpg" alt="showcase-image" class="w-100" />
               <figcaption
                 class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
                 U.S.
@@ -240,28 +240,28 @@
 
         <!-- my turn -->
 
-        <div id="my-turn-row" class="p-3 order-2 order-md-1 w-100 pb-md-4">
-          <h3 class="showcase-title">MY TURN</h3>
+        <div id="my-turn-row" class="p-3 order-2 order-md-1 w-100">
+          <h3 class="showcase-title p-1">MY TURN</h3>
 
           <div class="d-md-flex">
 
 
-            <figure class="col-md-4 p-0 pr-md-3">
-              <img src="img/image2.jpg" alt="showcase-image" />
+            <figure class="col-md-4 p-1">
+              <img class="img-fluid" src="img/image2.jpg" alt="showcase-image" />
               <figcaption class="showcase-title mt-2">
                 'My Son Is Autistic—The Pandemic Has Separated Us for 4 Months'
               </figcaption>
             </figure>
 
-            <figure class="col-md-4 p-0 px-md-3">
-              <img src="img/image2.jpg" alt="showcase-image" />
+            <figure class="col-md-4 p-1">
+              <img class="img-fluid" src="img/image2.jpg" alt="showcase-image" />
               <figcaption class="showcase-title mt-2">
                 'My Son Is Autistic—The Pandemic Has Separated Us for 4 Months'
               </figcaption>
             </figure>
 
-            <figure class="col-md-4 p-0 pl-md-3">
-              <img src="img/image2.jpg" alt="showcase-image" />
+            <figure class="col-md-4 p-1">
+              <img class="img-fluid" src="img/image2.jpg" alt="showcase-image" />
               <figcaption class="showcase-title mt-2">
                 'My Son Is Autistic—The Pandemic Has Separated Us for 4 Months'
               </figcaption>
@@ -273,12 +273,12 @@
         <!-- culture and travel -->
 
         <div id="CULTURE-TRAVEL-row" class="p-3 order-3 order-md-2 w-100">
-          <h3 class="showcase-title">CULTURE & TRAVEL</h3>
+          <h3 class="showcase-title p-1">CULTURE & TRAVEL</h3>
 
 
           <div class="d-md-flex">
-            <figure class="col-md-4 p-0 pr-md-3">
-              <img src="img/image3.jpg" alt="showcase-image" />
+            <figure class="col-md-4 p-1">
+              <img class="img-fluid" src="img/image3.jpg" alt="showcase-image" />
               <figcaption class="showcase-title mt-2">
                 'My Son Is Autistic—The Pandemic Has Separated Us
                 What It's Like to Travel Across the Country by
@@ -286,8 +286,8 @@
               </figcaption>
             </figure>
 
-            <figure class="col-md-4 p-0 px-md-3">
-              <img src="img/image3.jpg" alt="showcase-image" />
+            <figure class="col-md-4 p-1">
+              <img class="img-fluid" src="img/image3.jpg" alt="showcase-image" />
               <figcaption class="showcase-title mt-2">
                 'My Son Is Autistic—The Pandemic Has Separated Us
                 What It's Like to Travel Across the Country by
@@ -295,8 +295,8 @@
               </figcaption>
             </figure>
 
-            <figure class="col-md-4 p-0 pl-md-3">
-              <img src="img/image3.jpg" alt="showcase-image" />
+            <figure class="col-md-4 p-1">
+              <img class="img-fluid" src="img/image3.jpg" alt="showcase-image" />
               <figcaption class="showcase-title mt-2">
                 'My Son Is Autistic—The Pandemic Has Separated Us
                 What It's Like to Travel Across the Country by
@@ -438,7 +438,7 @@
         </div>
 
         <div id="sign-up" class="d-md-none order-last my-1 p-4 w-100">
-          <div class="row border mb-3 badge-light  col-9 m-auto ">
+          <div class="row border mb-3 badge-light m-auto ">
             <img class="w-25 col-2 my-3 pr-0" src="img/n.png" alt="Newsletter logo">
             <h6 class="font-weight-bolder mt-3 pr-1 col-10">START YOUR DAY WITH OUR TOP 5 ARTICLES</h6>
             <input class="border my-1 mx-3 p-1 w-100" type="email" name="email" id="" placeholder="Email...">
@@ -452,7 +452,7 @@
 
       <!-- debate and opinion columns -->
 
-      <div id="the-debate-column" class="bg-white p-3 col-12 col-lg-3 order-2 order-md-3">
+      <div id="the-debate-column" class="bg-white p-3 col-12 col-lg order-2 order-md-3">
         <h3 class="showcase-title">THE DEBATE</h3>
 
         <!-- debate -->
@@ -651,7 +651,7 @@
     <section>
 
       <div class="border-bottom">
-        <div class="row col-md-4 m-auto">
+        <div class="row col-md-5 m-auto">
           <img class="w-25 col-2 mt-3 mb-3 pr-0" src="img/n.png" alt="Newsletter logo">
           <h5 class="font-weight-bolder mt-3 pr-1 col-10 align-self-center">IN THE MAGAZINE</h5>
         </div>
@@ -748,7 +748,7 @@
     <section class="border-bottom">
 
       <div class="border-bottom">
-        <div class="row col-md-4 m-auto">
+        <div class="row col-md-5 m-auto">
           <img class="w-25 col-2 mt-3 mb-3 pr-0" src="img/n.png" alt="Newsletter logo">
           <h5 class="font-weight-bolder mt-3 pr-1 col-10 align-self-center">EDITOR'S PICKS</h5>
         </div>
@@ -893,10 +893,48 @@
         </div>
       </div>
     </section>
+    <div class="row footer-social border-top border-bottom pt-3 align-items-center">
+      <div class="d-flex col-md-8">
+        <img class="w-25 border" src="img/logo-red.svg" alt="Newsweek logo">
+        <p class="h6 border m-0 text-nowrap">© 2020 NEWSWEEK</p>
+      </div>
+      <ul class="list-unstyled row col-md-4 no-gutters border m-0">
+        <li><i class="fab fa-facebook-square mx-1 fa-2x"></i></li>
+        <li><i class="fab fa-twitter mx-1 fa-2x"></i></li>
+        <li><i class="fab fa-instagram mx-1 fa-2x"></i></li>
+        <li><i class="fab fa-tumblr mx-1 fa-2x" fa-2x></i></li>
+        <li><i class="fab fa-linkedin-in mx-1 fa-2x"></i></li>
+      </ul>
+    
+  </div>
 
-    <section>
+  <footer>
+    <ul class="px-1 mt-3 row list-unstyled h6">
+      <li class="px-2">Editions:</li>
+      <li class="px-2 border-right">U.S. Edition</li>
+      <li class="px-2 border-right">日本</li>
+      <li class="px-2 border-right">Pakistan</li>
+      <li class="px-2 border-right">Polska</li>
+      <li class="px-2 border-right">România</li>
+    </ul>
 
-    </section>
+    <ul class="px-1 mt-3 row list-unstyled h6">
+      <li class="px-2">About Us</li>
+      <li class="px-2 border-right">Corrections</li>
+      <li class="px-2 border-right">Contact Us</li>
+      <li class="px-2 border-right">Editorial Guidelines</li>
+      <li class="px-2 border-right">Advertise</li>
+      <li class="px-2 border-right">Copyright</li>
+      <li class="px-2 border-right">Copyright</li>
+      <li class="px-2 border-right">Terms & Conditions</li>
+      <li class="px-2 border-right">Privacy Policy</li>
+      <li class="px-2 border-right">Cookie Policy</li>
+      <li class="px-2 border-right">Terms of Sale</li>
+      <li class="px-2 border-right">Archive</li>
+      <li class="px-2 border-right">Announcements</li>
+      <li class="px-2 border-right">Consent preferences</li>
+    </ul>
+  </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
