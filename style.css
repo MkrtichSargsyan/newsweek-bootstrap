@@ -10,7 +10,14 @@
   --color-figcaption: #f72210;
   --bg-figcaption: #ffffffe6;
   --body-color: #f4f5f6;
+}
 
+.bg-red {
+  background-color: var(--color-figcaption);
+}
+
+.red {
+  color: var(--color-figcaption);
 }
 
 *,
