@@ -1,4 +1,4 @@
-# Project Name
+# NewsWeek Clone with Bootstrap 4.5
 
 > This project has been built with Bootstrap 4.5. We used minimal CSS. It has been a very teaching experience.
 
