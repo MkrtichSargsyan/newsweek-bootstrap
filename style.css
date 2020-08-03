@@ -165,4 +165,8 @@ figure figcaption {
 }
 
 
-/* more-storied */
+/* footer */
+
+#footer-social p{
+  font-size: 12px;
+}
