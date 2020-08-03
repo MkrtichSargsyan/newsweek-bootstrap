@@ -31,12 +31,12 @@
   outline: none;
 }
 
-
 /*
     ==============================================
                 ****** GLOBAL ******
     ==============================================
 */
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0 auto;
@@ -68,7 +68,6 @@ img {
     ==============================================
 */
 
-
 #header-top {
   background-color: var(--color-red);
 }
@@ -80,27 +79,25 @@ img {
 #search-bar {
   width: 60px;
   background-color: inherit;
-  border: none
+  border: none;
 }
 
 #medium-nav {
-
   border-bottom: 1px solid #ccc;
-
 }
 
 #medium-nav-items {
   display: flex;
 }
 
-#search-bar:active~#medium-nav-items,
-#search-bar:focus~#medium-nav-items {
+#search-bar:active ~ #medium-nav-items,
+#search-bar:focus ~ #medium-nav-items {
   display: none;
   width: 100%;
 }
 
-#search-bar:active~#medium-nav>div,
-#search-bar:focus~#medium-nav>div {
+#search-bar:active ~ #medium-nav > div,
+#search-bar:focus ~ #medium-nav > div {
   width: 100%;
 }
 
@@ -110,13 +107,11 @@ img {
   border: none;
 }
 
-
 /*
     ==============================================
                 ****** SHOWCASE ******
     ==============================================
 */
-
 
 figure figcaption {
   background-color: var(--bg-figcaption);
@@ -137,9 +132,8 @@ figure figcaption {
 
 .card a:hover {
   color: black;
-  text-decoration-color: var(--color-red)
+  text-decoration-color: var(--color-red);
 }
-
 
 #debate {
   position: relative;
@@ -163,7 +157,6 @@ figure figcaption {
   border-bottom: 4px solid var(--color-grey);
 }
 
-
 #vs {
   border-radius: 50%;
   background-color: black;
@@ -178,5 +171,5 @@ figure figcaption {
 }
 
 .footer-ul {
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
