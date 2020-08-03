@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
+    <title>Hello, world!</title>
+  </head>
 
-  <title>Hello, world!</title>
-</head>
+  <body class="container">
+    <header class="container-fluid">
+      <nav id="header-top" class="row text-white px-2 py-2 m-0">
+        <!-- weather- date -->
 
-<body class="container-fluid">
-  <header>
-    <nav id="header-top" class="row d-flex justify-content-between text-white py-2">
-      <!-- weather- date -->
+        <div class="weather-date col-lg-3 py-3 d-none d-lg-block">
+          <div>
+            <a class="text-white" href="#">
+              <i class="fas fa-cloud-sun-rain"></i><span>31°</span
+              ><span>Lorem impsum</span>
+            </a>
+          </div>
 
-      <div class="weather-date col-lg-3 py-3 d-none d-lg-block">
-        <div>
-          <a class="text-white" href="#">
-            <i class="fas fa-cloud-sun-rain"></i><span>31°</span><span>Lorem impsum</span>
-          </a>
+          <div>
+            <div>Fri, Jul 31, 2020</div>
+          </div>
         </div>
 
-        <div>
-          <div>Fri, Jul 31, 2020</div>
-        </div>
-      </div>
-
-      <!-- logo -->
+        <!-- logo -->
 
       <div class="col-3 col-md-6 col-5 d-flex py-1">
         <img src="img/logo.svg" alt="Newsweek Logo" style="width: 100px; height: 100px;" />
@@ -122,73 +135,103 @@
           Featured Stories
         </h3>
 
-        <div class="card border-0 mb-3">
-          <figure class="position-relative">
-            <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
-            <figcaption
-              class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
-              U.S.
-            </figcaption>
-          </figure>
-          <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
-            Build Border Wall</a>
-          <p class="text-dark h6">
-            "We'll be back before the Supreme Court soon to put a
-            stop to Trump's xenophobic border wall once and for
-            all," said ACLU attorney Dror Ladin on Friday.
-          </p>
+        <div
+          class="col-lg-3 col-md-6 col-6 d-flex align-items-center"
+        >
+          <i class="fas fa-user fa-md-2x d-md-none"></i>
+          <button
+            class="display-5 font-weight-bolder m-0 bg-transparent border-0 text-white d-none d-md-block"
+          >
+            LOGIN
+          </button>
+          <div>
+            <button
+              type="button"
+              class="btn btn-warning font-weight-bolder rounded-pill mx-3"
+            >
+              SUBSCRIBE
+            </button>
+          </div>
+          <i class="bars-icon fas fa-bars d-lg-none fa-2x"></i>
         </div>
+      </nav>
 
-        <div class="card border-0 mb-3">
-          <figure class="position-relative">
-            <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
-            <figcaption
-              class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
-              U.S.
-            </figcaption>
-          </figure>
-          <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
-            Build Border Wall</a>
-          <p class="text-dark h6">
-            "We'll be back before the Supreme Court soon to put a
-            stop to Trump's xenophobic border wall once and for
-            all," said ACLU attorney Dror Ladin on Friday.
-          </p>
-        </div>
+      <!-- middle nav -->
 
-        <div class="card border-0 mb-3">
-          <figure class="position-relative">
-            <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
-            <figcaption
-              class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
-              U.S.
-            </figcaption>
-          </figure>
-          <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
-            Build Border Wall</a>
-          <p class="text-dark h6">
-            "We'll be back before the Supreme Court soon to put a
-            stop to Trump's xenophobic border wall once and for
-            all," said ACLU attorney Dror Ladin on Friday.
-          </p>
-        </div>
+      <nav id="medium-nav" class="navbar navbar-expand-lg bg-white">
+        <div class="navbar-nav d-lg-flex flex-row-reverse d-none">
+          <i class="fas fa-search align-self-center"></i>
+          <input
+            id="search-bar"
+            type="text"
+            placeholder="Search"
+            class="float-right"
+          />
 
-        <div class="card border-0 mb-3">
-          <figure class="position-relative">
-            <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
-            <figcaption
-              class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
-              U.S.
-            </figcaption>
-          </figure>
-          <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
-            Build Border Wall</a>
-          <p class="text-dark h6">
-            "We'll be back before the Supreme Court soon to put a
-            stop to Trump's xenophobic border wall once and for
-            all," said ACLU attorney Dror Ladin on Friday.
-          </p>
+          <div id="medium-nav-items">
+            <a
+              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
+              href="#"
+              >U.S</a
+            >
+            <a
+              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
+              href="#"
+              >World</a
+            >
+            <a
+              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
+              href="#"
+              >Business</a
+            >
+            <a
+              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
+              href="#"
+              >Tech & Science</a
+            >
+            <a
+              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
+              href="#"
+              >Culture</a
+            >
+            <a
+              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
+              href="#"
+              >News Geek</a
+            >
+            <a
+              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
+              href="#"
+              >Sports</a
+            >
+            <a
+              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
+              href="#"
+              >Health</a
+            >
+            <a
+              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
+              href="#"
+              >The Debate</a
+            >
+            <a
+              class="nav-item nav-link px-2 font-weight-bold text-dark border-right"
+              href="#"
+              >Vantage</a
+            >
+            <a
+              class="nav-item nav-link px-2 font-weight-bold text-dark"
+              href="#"
+              >Weather</a
+            >
+          </div>
         </div>
+      </nav>
+
+      <!-- bottom nav -->
+
+      <nav class="bottom-nav"></nav>
+    </header>
 
         <div class="card border-0">
           <figure class="position-relative">
@@ -488,10 +531,24 @@
 
           </article>
 
-          <span id="vs" class="position-absolute text-white p-1 rounded-circle">
-            VS
-          </span>
-        </div>
+            <div class="row border-bottom border-top py-3">
+              <img
+                class="col-3 pb-4"
+                src="img/image4.jpg"
+                alt="showcase-image"
+              />
+              <div class="col-8">
+                <a class="mb-2" href="#"
+                  >Fauci, Birx Say Hydroxychloroquine Has No Benefit
+                  Against COVID-19</a
+                >
+                <p>
+                  President Donald Trump has repeatedly touted the
+                  anti-malaria drug as a COVID-19 treatment, despite a
+                  lack of evidence.
+                </p>
+              </div>
+            </div>
 
         <!-- opinion -->
 
@@ -639,7 +696,6 @@
           </div>
         </div>
 
-      </div>
 
 
 
@@ -659,15 +715,21 @@
 
       <div class="row">
         <div class="card border-0 my-3 col-md-3">
-          <figure class="position-relative mb-0">
-            <img src="img/image26.jpg" alt="newsletter MAGAZINE" class="w-100 p-0 mb-0" />
-            <figcaption class="position-absolute fixed-bottom w-50 text-nowrap p-1 my-0">
-              AUGUST 07 ISSUE
-            </figcaption>
-          </figure>
-          <button class="border-0 outline-none w-100 my-0 p-2 btn-light">
-            SEE ALL FEATURES >
-          </button>
+        <figure class="position-relative mb-0">
+          <img
+            src="img/image26.jpg"
+            alt="newsletter MAGAZINE"
+            class="w-100 im p-0 mb-0"
+          />
+          <figcaption
+            class="position-absolute fixed-bottom w-50 text-nowrap p-1 my-0" 
+          >
+            AUGUST 07 ISSUE
+          </figcaption>
+        </figure>
+       <button class="border-0 outline-none w-100 my-0 p-2 btn-light">
+         SEE ALL FEATURES >
+       </button>
         </div>
 
         <div class="card border-0 my-3 col-md-3">
@@ -894,10 +956,85 @@
       </div>
     </section>
 
-    <section>
+    <section class="row border-bottom">
+     
+      <div class="col-lg-7 m-1">
+        <h5 class="red">SUBSCRIBE</h3>
+        <div class="d-sm-flex bg-lightgray p-3">
+          <div class="w-25">
+            <img src="img/image-subscription.png" alt="Subscription image">
+          </div>
+       
+          <div class="ml-3">
+          <h4 class="font-weight-bold">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h4>
+          <p class="font-weight-lighter">All Access + Weekly Delivery.
+            Choose A Membership That's Perfect for You!</p>
+            <button class="button border-0 outline-none bg-red text-white p-2 h5 rounded">SUBSCRIBE ></button>
+          </div>
+        </div>
+      </div>
 
+
+
+        <div class="col-lg-4 m-1 offset-2">
+          <h5 class="red">NEWSLETTER</h3>
+          <div class="d-flex pb-3">
+            <img class="w-25 h-50 d-none d-sm-block" src="img/newsletter.png" alt="Subscription image">
+         
+            <div class="ml-2">
+            <h4 class="font-weight-bold">The Starting 5
+            </h4>
+            <p class="font-weight-lighter small">See why nearly a quarter of a million subscribers begin their day with the Starting 5.
+            </p>
+              <input class="border p-1 my-2 w-100" type="text" placeholder="Email Address">
+              <button class="button border-0 outline-none bg-red text-white p-2 h5 w-100 rounded">SUBSCRIBE ></button>
+            </div>
+          </div>
+        </div>
     </section>
 
+    <div class="d-md-flex justify-content-between align-items-end footer-social border-top border-bottom pt-3 pb-1">
+     
+        <img class="w-25 float-left mx-2" src="img/logo-red.svg" alt="Newsweek logo">
+        <p class="h6 float-left mx-3 my-0 text-nowrap">© 2020 NEWSWEEK</p>
+     
+      <div class="float-right">
+        <i class="fab fa-facebook-square mx-1 fa-2x"></i>
+        <i class="fab fa-twitter mx-1 fa-2x"></i>
+        <i class="fab fa-instagram mx-1 fa-2x"></i>
+        <i class="fab fa-tumblr mx-1 fa-2x" fa-2x></i>
+        <i class="fab fa-linkedin-in mx-1 fa-2x"></i>
+      </div>
+    </div>
+
+    <footer>
+      <ul class="px-1 mt-3 row list-unstyled lead">
+        <li class="px-2">Editions:</li>
+        <li class="px-2 border-right">U.S. Edition</li>
+        <li class="px-2 border-right">日本</li>
+        <li class="px-2 border-right">Pakistan</li>
+        <li class="px-2 border-right">Polska</li>
+        <li class="px-2 border-right">România</li>
+      </ul>
+
+      <ul class="px-1 mt-3 row list-unstyled lead">
+        <li class="px-2">About Us</li>
+        <li class="px-2 border-right">Corrections</li>
+        <li class="px-2 border-right">Contact Us</li>
+        <li class="px-2 border-right">Editorial Guidelines</li>
+        <li class="px-2 border-right">Advertise</li>
+        <li class="px-2 border-right">Copyright</li>
+        <li class="px-2 border-right">Copyright</li>
+        <li class="px-2 border-right">Terms & Conditions</li>
+        <li class="px-2 border-right">Privacy Policy</li>
+        <li class="px-2 border-right">Cookie Policy</li>
+        <li class="px-2 border-right">Terms of Sale</li>
+        <li class="px-2 border-right">Archive</li>
+        <li class="px-2 border-right">Announcements</li>
+        <li class="px-2 border-right">Consent preferences</li>
+      </ul>
+    </footer>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
