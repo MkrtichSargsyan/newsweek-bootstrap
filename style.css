@@ -114,6 +114,8 @@ img {
 figure figcaption {
   background-color: var(--bg-figcaption);
   color: var(--color-figcaption);
+  bottom: 0;
+  left: 0;
 }
 
 .showcase-title {
