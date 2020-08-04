@@ -82,14 +82,14 @@ img {
   border: none;
 }
 
-#search-bar:active ~ #medium-nav-items,
-#search-bar:focus ~ #medium-nav-items {
+#search-bar:active ~ .medium-nav-items,
+#search-bar:focus ~ .medium-nav-items {
   display: none;
   width: 100%;
 }
 
-#search-bar:active ~ #medium-nav > div,
-#search-bar:focus ~ #medium-nav > div {
+#search-bar:active ~ .medium-nav,
+#search-bar:focus ~ .medium-nav{
   width: 100%;
 }
 
