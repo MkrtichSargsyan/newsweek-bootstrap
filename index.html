@@ -57,26 +57,25 @@
     <!-- middle nav -->
 
     <nav id="medium-nav" class="row d-none d-lg-block bg-white py-2">
-      <div class="navbar-nav d-lg-flex flex-row-reverse justify-content-end d-none w-100">
+      <div class="navbar-nav d-flex flex-row-reverse justify-content-end d-none">
         <i class="fas fa-search align-self-center"></i>
         <input id="search-bar" type="text" placeholder="Search" class="float-right" />
-
-        <div id="medium-nav-items">
-          <a class="nav-item nav-link px-3 text-nowrap font-weight-bold h6 text-dark border-right" href="#">U.S</a>
-          <a class="nav-item nav-link px-3 text-nowrap font-weight-bold h6 text-dark border-right" href="#">World</a>
-          <a class="nav-item nav-link px-3 text-nowrap font-weight-bold h6 text-dark border-right" href="#">Business</a>
-          <a class="nav-item nav-link px-3 text-nowrap font-weight-bold h6 text-dark border-right" href="#">Tech &
-            Science</a>
-          <a class="nav-item nav-link px-3 text-nowrap font-weight-bold h6 text-dark border-right" href="#">Culture</a>
-          <a class="nav-item nav-link px-3 text-nowrap font-weight-bold h6 text-dark border-right" href="#">News
-            Geek</a>
-          <a class="nav-item nav-link px-3 text-nowrap font-weight-bold h6 text-dark border-right" href="#">Sports</a>
-          <a class="nav-item nav-link px-3 text-nowrap font-weight-bold h6 text-dark border-right" href="#">Health</a>
-          <a class="nav-item nav-link px-3 text-nowrap font-weight-bold h6 text-dark border-right" href="#">The
-            Debate</a>
-          <a class="nav-item nav-link px-3 text-nowrap font-weight-bold h6 text-dark border-right" href="#">Vantage</a>
-          <a class="nav-item nav-link px-3 text-nowrap font-weight-bold h6 text-dark" href="#">Weather</a>
-        </div>
+          <ul class="medium-nav-items list-unstyled d-flex">
+            <li><a class="nav-item nav-link text-nowrap font-weight-bold h6 text-dark border-right" href="#">U.S</a></li>
+            <li><a class="nav-item nav-link text-nowrap font-weight-bold h6 text-dark border-right" href="#">World</a></li>
+            <li><a class="nav-item nav-link text-nowrap font-weight-bold h6 text-dark border-right" href="#">Business</a></li>
+            <li><a class="nav-item nav-link text-nowrap font-weight-bold h6 text-dark border-right" href="#">Tech &
+                Science</a></li>
+            <li><a class="nav-item nav-link text-nowrap font-weight-bold h6 text-dark border-right" href="#">Culture</a></li>
+            <li><a class="nav-item nav-link text-nowrap font-weight-bold h6 text-dark border-right" href="#">News
+              Geek</a></li>
+            <li><a class="nav-item nav-link text-nowrap font-weight-bold h6 text-dark border-right" href="#">Sports</a></li>
+            <li><a class="nav-item nav-link text-nowrap font-weight-bold h6 text-dark border-right" href="#">Health</a></li>
+            <li><a class="nav-item nav-link text-nowrap font-weight-bold h6 text-dark border-right" href="#">The
+              Debate</a></li>
+            <li><a class="nav-item nav-link text-nowrap font-weight-bold h6 text-dark border-right" href="#">Vantage</a></li>
+            <li><a class="nav-item nav-link text-nowrap font-weight-bold h6 text-dark" href="#">Weather</a></li>
+         </ul>
       </div>
     </nav>
 
@@ -462,13 +461,13 @@
         <div class="position-relative mb-md-0 mb-4">
 
           <article class="border-bottom row my-1 mx-1 py-3">
-            <div class="col-1 p-0">
+            <div class="col-2 p-0">
               <div>
                 <img src="img/image15.jpg" alt="avatar" class="rounded-circle" />
               </div>
             </div>
-            <div class="col-11 ml-2  p-0 row flex-column">
-              <a class="mb-1" href="#">Public Safety Requires Thinking Outside the
+            <div class="col-10 ml-2  p-0 row flex-column">
+              <a class="mb-1 responsive-font-size" href="#">Public Safety Requires Thinking Outside the
                 Cell</a>
               <p>BY <strong>MARC LEVIN</strong></p>
             </div>
@@ -477,12 +476,12 @@
 
           <article class="border-top row my-1 mx-1 py-3">
 
-            <div class="col-11 ml-2  p-0 row flex-column">
+            <div class="col-10 ml-2  p-0 row flex-column">
               <a class="mb-1" href="#">Public Safety Requires Thinking Outside the
                 Cell</a>
               <p>BY <strong>MARC LEVIN</strong></p>
             </div>
-            <div class="col-1 p-0">
+            <div class="col-2 p-0">
               <div>
                 <img src="img/image15.jpg" alt="avatar" class="rounded-circle" />
               </div>
@@ -757,7 +756,9 @@
       <div class="row">
         <div class="card border-0 my-3 col-lg-3 col-md-6">
           <figure class="position-relative mb-0">
-            <img src="img/image34.png" alt="newsletter MAGAZINE" class="w-100 p-0 mb-0" />
+            <div class="w-100">
+            <img src="img/image34.png" alt="newsletter MAGAZINE" class="w-100 p-0 mb-0 img-fluid"/>
+          </div>
             <figcaption class="position-absolute fixed-bottom w-50 text-nowrap p-1 my-0">
               NEWS
             </figcaption>

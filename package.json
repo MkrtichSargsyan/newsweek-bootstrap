@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "## style command  npx stylelint \"**/*.{css,scss}\"",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "rfs": "^9.0.3"
+  },
   "devDependencies": {
     "hint": "^6.0.6",
     "stylelint": "^13.3.3",

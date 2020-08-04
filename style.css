@@ -82,14 +82,6 @@ img {
   border: none;
 }
 
-#medium-nav {
-  border-bottom: 1px solid #ccc;
-}
-
-#medium-nav-items {
-  display: flex;
-}
-
 #search-bar:active ~ #medium-nav-items,
 #search-bar:focus ~ #medium-nav-items {
   display: none;
