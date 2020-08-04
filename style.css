@@ -129,30 +129,26 @@ figure figcaption {
   line-height: 1;
 }
 
+.the-debate-column a {
+  font-size: 17px;
+  line-height: 21px;
+}
+
 .card a:hover {
   color: black;
   text-decoration-color: var(--color-red);
 }
 
-#debate {
-  position: relative;
-}
-
-#the-debate-column a {
-  font-size: 17px;
-  line-height: 21px;
-}
-
-#the-debate-column p {
+.the-debate-column p {
   font-size: 14px;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#the-debate-column article:first-child {
+.the-debate-column article:first-child {
   border-top: 4px solid var(--color-grey);
 }
 
-#the-debate-column article:nth-child(2) {
+.the-debate-column article:nth-child(2) {
   border-bottom: 4px solid var(--color-grey);
 }
 
@@ -165,7 +161,7 @@ figure figcaption {
 
 /* footer */
 
-#footer-social p {
+.footer-social p {
   font-size: 12px;
 }
 
