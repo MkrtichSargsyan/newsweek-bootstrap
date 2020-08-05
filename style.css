@@ -167,3 +167,7 @@ figure figcaption {
 .footer-ul {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.footer-logo{
+  object-fit: unset;
+}
