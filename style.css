@@ -77,9 +77,9 @@ img {
   background-color: var(--color-red);
 }
 
-/* #header-top img{
+#header-top img{
   object-fit: unset;
-} */
+}
 
 .bars-icon {
   color: var(--color-grey);
