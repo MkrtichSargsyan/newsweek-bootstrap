@@ -59,7 +59,7 @@ a:hover {
 img {
   width: 100%;
   height: 100%;
-  background-size: cover;
+  object-fit: cover;
 }
 
 .logo-pic {
@@ -77,6 +77,10 @@ img {
   background-color: var(--color-red);
 }
 
+/* #header-top img{
+  object-fit: unset;
+} */
+
 .bars-icon {
   color: var(--color-grey);
 }
@@ -87,14 +91,9 @@ img {
   border: none;
 }
 
-.search-bar:active ~ .medium-nav-items,
-.search-bar:focus ~ .medium-nav-items {
+.search-bar:active~.medium-nav-items,
+.search-bar:focus~.medium-nav-items {
   display: none;
-  width: 100%;
-}
-
-.search-bar:active ~ .medium-nav,
-.search-bar:focus ~ .medium-nav {
   width: 100%;
 }
 
