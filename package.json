@@ -14,9 +14,9 @@
     "stylelint-scss": "^3.17.2"
   },
   "scripts": {
-    "test": "yarn start webhint && npm run stylelint && echo \"✅✅✅ All tests passed ✅✅✅\"",
-    "webhint": "yarn hint .",
-    "stylelint": "yarn stylelint **/*.css"
+    "test": "npm run webhint && npm run stylelint && echo \"✅✅✅ All tests passed ✅✅✅\"",
+    "webhint": "npx hint .",
+    "stylelint": "npx stylelint **/*.css"
   },
   "repository": {
     "type": "git",
