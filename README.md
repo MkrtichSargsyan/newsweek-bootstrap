@@ -1,8 +1,8 @@
-# Project Name
+# NewsWeek Clone with Bootstrap 4.5
 
-> One paragraph statement about the project.
+> This project has been built with Bootstrap 4.5. We used minimal CSS. It has been a very teaching experience.
 
-![screenshot](./app_screenshot.png)
+![screenshot](img/screenshot.png)
 
 
 Additional description about the project and its features.
@@ -10,12 +10,13 @@ Additional description about the project and its features.
 ## Built With
 
 - HTML
+- Bootstrap 4.5
 - CSS3
 - Font awesome icons
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com)
+[Live Demo Link](https://mkrtichsargsyan.github.io/newsweek-bootstrap/)
 
 ## To get a local copy up and running follow these simple example steps.
 
@@ -41,12 +42,11 @@ Install and run a live server plugin on you IDE/Text editor and run it from the 
 - Linkedin: [linkedin](https://www.linkedin.com/in/mkrtich-sargsyan-921ab0152/)
 - Email:  mkrtichsargsyan24@gmail.com
 
-👤 **Author2**
+👤 **Gürbüz Ertunga**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-- Email:  
+- Github: [@githubhandle](https://github.com/gurbuzertunga)
+- Linkedin: [linkedin](https://www.linkedin.com/in/gurbuz-ertunga-a607a2a5/)
+- Email:  gurbuzertunga@gmail.com
 
 ## Show your support
 

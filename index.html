@@ -2,16 +2,1462 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='icon' href="#">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Newsweek</title>
 </head>
 
-<body>
-  <h1>hello world</h1>
+<body class="container-fluid">
+  <header>
+    <nav id="header-top" class="row justify-content-between text-white py-2">
+      <!-- weather- date -->
+
+      <div class="weather-date col-lg-3 py-3 d-none d-lg-block">
+        <div>
+          <a class="text-white" href="#">
+            <i class="fas fa-cloud-sun-rain"></i><span>31°</span><span>Lorem impsum</span>
+          </a>
+        </div>
+        <div>
+          <div>Fri, Jul 31, 2020</div>
+        </div>
+      </div>
+
+      <!-- logo -->
+
+      <div class="col-md-3 col-lg-4 col-5 d-flex py-1">
+        <img src="img/logo.svg" alt="Newsweek Logo" />
+      </div>
+
+      <!-- login -->
+
+      <div class="col-lg-3 col-md-6 col-6 d-flex align-items-center justify-content-end">
+        <i class="fas fa-user fa-md-2x d-md-none"></i>
+        <button type="submit"
+          class="display-5 font-weight-bolder m-0 bg-transparent border-0 text-white d-none d-md-block">
+          LOGIN
+        </button>
+        <div>
+          <button type="button" class="btn btn-warning font-weight-bolder rounded-pill mx-3">
+            SUBSCRIBE
+          </button>
+        </div>
+        <i class="bars-icon fas fa-bars d-lg-none fa-2x"></i>
+      </div>
+    </nav>
+
+    <!-- middle nav -->
+
+    <nav class="row d-none d-lg-block bg-white py-2 medium-nav">
+      <div class="align-items-center border-bottom d-flex flex-row-reverse justify-content-end d-none w-100">
+
+        <i class="fas fa-search align-self-center mr-5"></i>
+        <input type="text" placeholder="Search" class="float-right search-bar" />
+        <ul class="navbar medium-nav-items list-unstyled m-0 justify-content-between w-100">
+          <li>
+            <a class="text-nowrap font-weight-bold h6 text-dark m-0" href="#">U.S</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 text-dark m-0" href="#">World</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 text-dark m-0" href="#">Business</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 text-dark m-0" href="#">Tech &
+              Science</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 text-dark m-0" href="#">Culture</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 text-dark m-0" href="#">News
+              Geek</a></li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 text-dark m-0" href="#">Sports</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 text-dark m-0" href="#">Health</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 text-dark m-0" href="#">The
+              Debate</a></li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 text-dark m-0" href="#">Vantage</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 text-dark m-0" href="#">Weather</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- bottom nav -->
+
+    <nav class="row d-none d-lg-block bg-white py-2 medium-nav">
+      <div class="align-items-center border-bottom d-flex W-75">
+
+        <ul class="navbar medium-nav-items list-unstyled m-0 justify-content-start">
+          <li>
+            <a class="text-nowrap font-weight-bold h6 px-3 text-dark m-0" href="#">TRENDING</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 px-3 text-dark m-0" href="#">DONALD TRUMP</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 px-3 text-dark m-0" href="#">JOE BIDEN</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 px-3 text-dark m-0" href="#">CHINA</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 px-3 text-dark m-0" href="#">CORONAVIRUS</a>
+          </li>
+          <li>
+            <a class="text-nowrap font-weight-bold h6 px-3 text-dark m-0" href="#">2020 ELECTIONS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- showcase -->
+
+  <section class="row">
+
+    <!-- featured stories column -->
+
+    <div class="bg-white mb-3 mb-md-0 p-3 col-md-5 col-lg order-1">
+
+
+      <div class="d-md-none bg-white mb-3 order-first order-md-2">
+        <h3 class="showcase-title text-uppercase">
+          TOP STORY
+        </h3>
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/topstory.jpg" alt="showcase-image" class="w-100" />
+            <figcaption
+              class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+              U.S.
+            </figcaption>
+          </figure>
+          <a class="mb-2" href="#">White House Commits to Unemployment Extension As
+            Negotiations Stall</a>
+          <p>
+            As a critical deadline looms, White House officials
+            are stressing that they want to extend enhanced
+            unemployment benefits that went into effect earlier
+            this year in response to the coronavirus pandemic but
+            negotiations with Democratic leaders, so far, have
+            fallen short.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="showcase-title text-uppercase">
+        Featured Stories
+      </h3>
+
+      <div class="card border-0 mb-3">
+        <figure class="position-relative">
+          <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
+          <figcaption class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+            U.S.
+          </figcaption>
+        </figure>
+        <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
+          Build Border Wall</a>
+        <p class="text-dark h6">
+          "We'll be back before the Supreme Court soon to put a
+          stop to Trump's xenophobic border wall once and for
+          all," said ACLU attorney Dror Ladin on Friday.
+        </p>
+      </div>
+
+      <div class="card border-0 mb-3">
+        <figure class="position-relative">
+          <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
+          <figcaption class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+            U.S.
+          </figcaption>
+        </figure>
+        <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
+          Build Border Wall</a>
+        <p class="text-dark h6">
+          "We'll be back before the Supreme Court soon to put a
+          stop to Trump's xenophobic border wall once and for
+          all," said ACLU attorney Dror Ladin on Friday.
+        </p>
+      </div>
+
+      <div class="card border-0 mb-3">
+        <figure class="position-relative">
+          <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
+          <figcaption class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+            U.S.
+          </figcaption>
+        </figure>
+        <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
+          Build Border Wall</a>
+        <p class="text-dark h6">
+          "We'll be back before the Supreme Court soon to put a
+          stop to Trump's xenophobic border wall once and for
+          all," said ACLU attorney Dror Ladin on Friday.
+        </p>
+      </div>
+
+      <div class="card border-0 mb-3">
+        <figure class="position-relative">
+          <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
+          <figcaption class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+            U.S.
+          </figcaption>
+        </figure>
+        <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
+          Build Border Wall</a>
+        <p class="text-dark h6">
+          "We'll be back before the Supreme Court soon to put a
+          stop to Trump's xenophobic border wall once and for
+          all," said ACLU attorney Dror Ladin on Friday.
+        </p>
+      </div>
+
+      <div class="card border-0">
+        <figure class="position-relative">
+          <img src="img/image1.jpg" alt="showcase-image" class="w-100" />
+          <figcaption class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+            U.S.
+          </figcaption>
+        </figure>
+        <a class="mb-2" href="#">Supreme Court Allows Trump to Use Pentagon Funds to
+          Build Border Wall</a>
+        <p class="text-dark h6">
+          "We'll be back before the Supreme Court soon to put a
+          stop to Trump's xenophobic border wall once and for
+          all," said ACLU attorney Dror Ladin on Friday.
+        </p>
+      </div>
+    </div>
+
+    <!-- top story column -->
+
+    <div class="bg-white col-md-7 col-lg-5 d-flex flex-column p-md-0 order-3 order-md-2">
+
+
+      <div class="d-none d-md-block bg-white p-3 order-md-first">
+        <h3 class="showcase-title text-uppercase">
+          TOP STORY
+        </h3>
+        <div class="card border-0 order-first">
+          <figure class="position-relative w-100">
+            <img src="img/topstory.jpg" alt="showcase-image" class="w-100" />
+            <figcaption
+              class="position-absolute fixed-bottom w-25 p-1 d-flex justify-content-center align-items-center">
+              U.S.
+            </figcaption>
+          </figure>
+          <a class="mb-2" href="#">White House Commits to Unemployment Extension As
+            Negotiations Stall</a>
+          <p>
+            As a critical deadline looms, White House officials
+            are stressing that they want to extend enhanced
+            unemployment benefits that went into effect earlier
+            this year in response to the coronavirus pandemic but
+            negotiations with Democratic leaders, so far, have
+            fallen short.
+          </p>
+        </div>
+      </div>
+
+      <!-- my turn -->
+
+      <div class="p-3 order-2 order-md-1 w-100">
+        <h3 class="showcase-title p-1">MY TURN</h3>
+
+        <div class="d-md-flex">
+
+
+          <figure class="col-md-4 p-1">
+            <img class="img-fluid" src="img/image2.jpg" alt="showcase-image" />
+            <figcaption class="showcase-title mt-2">
+              'My Son Is Autistic—The Pandemic Has Separated Us for 4 Months'
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 p-1">
+            <img class="img-fluid" src="img/image2.jpg" alt="showcase-image" />
+            <figcaption class="showcase-title mt-2">
+              'My Son Is Autistic—The Pandemic Has Separated Us for 4 Months'
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 p-1">
+            <img class="img-fluid" src="img/image2.jpg" alt="showcase-image" />
+            <figcaption class="showcase-title mt-2">
+              'My Son Is Autistic—The Pandemic Has Separated Us for 4 Months'
+            </figcaption>
+          </figure>
+        </div>
+
+      </div>
+
+      <!-- culture and travel -->
+
+      <div class="p-3 order-3 order-md-2 w-100">
+        <h3 class="showcase-title p-1">CULTURE & TRAVEL</h3>
+
+
+        <div class="d-md-flex">
+          <div class="card border-0 px-0 col-md-4">
+            <figure class="position-relative">
+              <img class="w-100" src="img/image3.jpg" alt="showcase-image" />
+              <figcaption class="text-center position-absolute fixed-bottom bg-info text-dark w-50">
+                AMTRAK
+              </figcaption>
+            </figure>
+            <p class="showcase-title mt-2">
+              'My Son Is Autistic—The Pandemic Has Separated Us
+              What It's Like to Travel Across the Country by
+              Amtrak Right Now
+            </p>
+
+          </div>
+
+
+          <div class="card border-0 px-0 mx-1 col-md-4">
+            <figure class="position-relative">
+              <img class="w-100" src="img/image3.jpg" alt="showcase-image" />
+              <figcaption class="text-center position-absolute fixed-bottom bg-info text-dark w-50">
+                AMTRAK
+              </figcaption>
+            </figure>
+            <p class="showcase-title mt-2">
+              'My Son Is Autistic—The Pandemic Has Separated Us
+              What It's Like to Travel Across the Country by
+              Amtrak Right Now
+            </p>
+
+          </div>
+
+          <div class="card border-0 px-0 col-md-4">
+            <figure class="position-relative">
+              <img class="w-100" src="img/image3.jpg" alt="showcase-image" />
+              <figcaption class="text-center position-absolute fixed-bottom bg-info text-dark w-50">
+                AMTRAK
+              </figcaption>
+            </figure>
+            <p class="showcase-title mt-2">
+              'My Son Is Autistic—The Pandemic Has Separated Us
+              What It's Like to Travel Across the Country by
+              Amtrak Right Now
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- more storeis column -->
+
+      <div class="mb-3 mb-md-0 p-3 mt-3 order-1 order-md-3">
+        <h3 class="showcase-title text-uppercase pb-3 mt-3">
+          MORE STORIES
+        </h3>
+
+        <div class="border-bottom border-top py-3">
+          <img class="col-3 p-0 mr-3 float-left" src="img/image4.jpg" alt="showcase-image" />
+          <a class="mb-4 h6" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+            Against COVID-19</a>
+          <p class="mt-2">
+            President Donald Trump has repeatedly touted the
+            anti-malaria drug as a COVID-19 treatment, despite a
+            lack of evidence.
+          </p>
+        </div>
+
+        <div class="border-bottom border-top py-3">
+          <img class="col-3 p-0 mr-3 float-left" src="img/image4.jpg" alt="showcase-image" />
+          <a class="mb-4 h6" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+            Against COVID-19</a>
+          <p class="mt-2">
+            President Donald Trump has repeatedly touted the
+            anti-malaria drug as a COVID-19 treatment, despite a
+            lack of evidence.
+          </p>
+        </div>
+        <div class="border-bottom border-top py-3">
+          <img class="col-3 p-0 mr-3 float-left" src="img/image4.jpg" alt="showcase-image" />
+          <a class="mb-4 h6" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+            Against COVID-19</a>
+          <p class="mt-2">
+            President Donald Trump has repeatedly touted the
+            anti-malaria drug as a COVID-19 treatment, despite a
+            lack of evidence.
+          </p>
+        </div>
+        <div class="border-bottom border-top py-3">
+          <img class="col-3 p-0 mr-3 float-left" src="img/image4.jpg" alt="showcase-image" />
+          <a class="mb-4 h6" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+            Against COVID-19</a>
+          <p class="mt-2">
+            President Donald Trump has repeatedly touted the
+            anti-malaria drug as a COVID-19 treatment, despite a
+            lack of evidence.
+          </p>
+        </div>
+        <div class="border-bottom border-top py-3">
+          <img class="col-3 p-0 mr-3 float-left" src="img/image4.jpg" alt="showcase-image" />
+          <a class="mb-4 h6" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+            Against COVID-19</a>
+          <p class="mt-2">
+            President Donald Trump has repeatedly touted the
+            anti-malaria drug as a COVID-19 treatment, despite a
+            lack of evidence.
+          </p>
+        </div>
+        <div class="border-bottom border-top py-3">
+          <img class="col-3 p-0 mr-3 float-left" src="img/image4.jpg" alt="showcase-image" />
+          <a class="mb-4 h6" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+            Against COVID-19</a>
+          <p class="mt-2">
+            President Donald Trump has repeatedly touted the
+            anti-malaria drug as a COVID-19 treatment, despite a
+            lack of evidence.
+          </p>
+        </div>
+        <div class="border-bottom border-top py-3">
+          <img class="col-3 p-0 mr-3 float-left" src="img/image4.jpg" alt="showcase-image" />
+          <a class="mb-4 h6" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+            Against COVID-19</a>
+          <p class="mt-2">
+            President Donald Trump has repeatedly touted the
+            anti-malaria drug as a COVID-19 treatment, despite a
+            lack of evidence.
+          </p>
+        </div>
+        <div class="border-bottom border-top py-3">
+          <img class="col-3 p-0 mr-3 float-left" src="img/image4.jpg" alt="showcase-image" />
+          <a class="mb-4 h6" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+            Against COVID-19</a>
+          <p class="mt-2">
+            President Donald Trump has repeatedly touted the
+            anti-malaria drug as a COVID-19 treatment, despite a
+            lack of evidence.
+          </p>
+        </div>
+        <div class="border-bottom border-top py-3">
+          <img class="col-3 p-0 mr-3 float-left" src="img/image4.jpg" alt="showcase-image" />
+          <a class="mb-4 h6" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+            Against COVID-19</a>
+          <p class="mt-2">
+            President Donald Trump has repeatedly touted the
+            anti-malaria drug as a COVID-19 treatment, despite a
+            lack of evidence.
+          </p>
+        </div>
+        <div class="border-bottom border-top py-3">
+          <img class="col-3 p-0 mr-3 float-left" src="img/image4.jpg" alt="showcase-image" />
+          <a class="mb-4 h6" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+            Against COVID-19</a>
+          <p class="mt-2">
+            President Donald Trump has repeatedly touted the
+            anti-malaria drug as a COVID-19 treatment, despite a
+            lack of evidence.
+          </p>
+        </div>
+        <div class="border-bottom border-top py-3">
+          <img class="col-3 p-0 mr-3 float-left" src="img/image4.jpg" alt="showcase-image" />
+          <a class="mb-4 h6" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+            Against COVID-19</a>
+          <p class="mt-2">
+            President Donald Trump has repeatedly touted the
+            anti-malaria drug as a COVID-19 treatment, despite a
+            lack of evidence.
+          </p>
+        </div>
+        <div class="border-top py-3">
+          <img class="col-3 p-0 mr-3 float-left" src="img/image4.jpg" alt="showcase-image" />
+          <a class="mb-4 h6" href="#">Fauci, Birx Say Hydroxychloroquine Has No Benefit
+            Against COVID-19</a>
+          <p class="mt-2">
+            President Donald Trump has repeatedly touted the
+            anti-malaria drug as a COVID-19 treatment, despite a
+            lack of evidence.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-md-none order-last my-1 p-4 w-100">
+        <div class="row border mb-3 badge-light m-auto ">
+          <img class="w-25 col-2 my-3 pr-0" src="img/n.png" alt="Newsletter logo">
+          <h6 class="font-weight-bolder mt-3 pr-1 col-10">START YOUR DAY WITH OUR TOP 5 ARTICLES</h6>
+          <input class="border my-1 mx-3 p-1 w-100" type="email" name="email" placeholder="Email...">
+          <button type="submit" class="mt-1 p-1 mb-3 mx-3 border-0 text-white w-100 font-weight-bold bg-danger">
+            FREE SIGN-UP >
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- debate and opinion columns -->
+
+    <div class="bg-white p-3 col-12 col-lg order-2 order-md-3 the-debate-column">
+      <h3 class="showcase-title">THE DEBATE</h3>
+
+      <!-- debate -->
+
+      <div class="position-relative mb-md-0 mb-4">
+
+        <article class="border-bottom row my-1 mx-1 py-3">
+          <div class="col-2 p-0">
+            <div>
+              <img src="img/image15.jpg" alt="avatar" class="rounded-circle" />
+            </div>
+          </div>
+          <div class="col-10 ml-2  p-0 row flex-column">
+            <a class="mb-1 responsive-font-size" href="#">Public Safety Requires Thinking Outside the
+              Cell</a>
+            <p>BY <strong>MARC LEVIN</strong></p>
+          </div>
+
+        </article>
+
+        <article class="border-top row my-1 mx-1 py-3">
+
+          <div class="col-10 ml-2  p-0 row flex-column">
+            <a class="mb-1" href="#">Public Safety Requires Thinking Outside the
+              Cell</a>
+            <p>BY <strong>MARC LEVIN</strong></p>
+          </div>
+          <div class="col-2 p-0">
+            <div>
+              <img src="img/image15.jpg" alt="avatar" class="rounded-circle" />
+            </div>
+          </div>
+
+        </article>
+
+        <span id="vs" class="position-absolute text-white p-1 rounded-circle">
+          VS
+        </span>
+      </div>
+
+      <!-- opinion -->
+      <div>
+        <h3 class="showcase-title py-3">OPINION</h3>
+
+        <article class="border-bottom row my-1 mx-1 py-3">
+          <div class="col-lg-2 col-md-1 col-2 p-0">
+            <div>
+              <img src="img/profile.png" alt="avatar" class="rounded-circle" />
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-11 col-10 ml-2  p-0 row flex-column">
+            <a class="mb-1" href="#">
+              GOP Want to Punish Americans for Not Working—It Makes No Economic Sense
+            </a>
+            <p>BY <strong>Lindsay Ovens</strong></p>
+          </div>
+        </article>
+
+        <article class="border-bottom row my-1 mx-1 py-3">
+          <div class="col-lg-2 col-md-1 col-2 p-0">
+            <div>
+              <img src="img/profile.png" alt="avatar" class="rounded-circle" />
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-11 col-10 ml-2  p-0 row flex-column">
+            <a class="mb-1" href="#">
+              GOP Want to Punish Americans for Not Working—It Makes No Economic Sense
+            </a>
+            <p>BY <strong>Lindsay Ovens</strong></p>
+          </div>
+        </article>
+
+        <article class="border-bottom row my-1 mx-1 py-3">
+          <div class="col-lg-2 col-md-1 col-2 p-0">
+            <div>
+              <img src="img/profile.png" alt="avatar" class="rounded-circle" />
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-11 col-10 ml-2  p-0 row flex-column">
+            <a class="mb-1" href="#">
+              GOP Want to Punish Americans for Not Working—It Makes No Economic Sense
+            </a>
+            <p>BY <strong>Lindsay Ovens</strong></p>
+          </div>
+        </article>
+
+        <article class="border-bottom row my-1 mx-1 py-3">
+          <div class="col-lg-2 col-md-1 col-2 p-0">
+            <div>
+              <img src="img/profile.png" alt="avatar" class="rounded-circle" />
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-11 col-10 ml-2  p-0 row flex-column">
+            <a class="mb-1" href="#">
+              GOP Want to Punish Americans for Not Working—It Makes No Economic Sense
+            </a>
+            <p>BY <strong>Lindsay Ovens</strong></p>
+          </div>
+        </article>
+
+        <article class="border-bottom row my-1 mx-1 py-3">
+          <div class="col-lg-2 col-md-1 col-2 p-0">
+            <div>
+              <img src="img/profile.png" alt="avatar" class="rounded-circle" />
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-11 col-10 ml-2  p-0 row flex-column">
+            <a class="mb-1" href="#">
+              GOP Want to Punish Americans for Not Working—It Makes No Economic Sense
+            </a>
+            <p>BY <strong>Lindsay Ovens</strong></p>
+          </div>
+        </article>
+
+        <article class="border-bottom row my-1 mx-1 py-3">
+          <div class="col-lg-2 col-md-1 col-2 p-0">
+            <div>
+              <img src="img/profile.png" alt="avatar" class="rounded-circle" />
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-11 col-10 ml-2  p-0 row flex-column">
+            <a class="mb-1" href="#">
+              GOP Want to Punish Americans for Not Working—It Makes No Economic Sense
+            </a>
+            <p>BY <strong>Lindsay Ovens</strong></p>
+          </div>
+        </article>
+
+        <article class="border-bottom row my-1 mx-1 py-3">
+          <div class="col-lg-2 col-md-1 col-2 p-0">
+            <div>
+              <img src="img/profile.png" alt="avatar" class="rounded-circle" />
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-11 col-10 ml-2  p-0 row flex-column">
+            <a class="mb-1" href="#">
+              GOP Want to Punish Americans for Not Working—It Makes No Economic Sense
+            </a>
+            <p>BY <strong>Lindsay Ovens</strong></p>
+          </div>
+        </article>
+
+        <article class="border-bottom row my-1 mx-1 py-3">
+          <div class="col-lg-2 col-md-1 col-2 p-0">
+            <div>
+              <img src="img/profile.png" alt="avatar" class="rounded-circle" />
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-11 col-10 ml-2 ml-2  p-0 row flex-column">
+            <a class="mb-1" href="#">
+              GOP Want to Punish Americans for Not Working—It Makes No Economic Sense
+            </a>
+            <p>BY <strong>Lindsay Ovens</strong></p>
+          </div>
+        </article>
+
+        <article class="row my-1 mx-1 py-3">
+          <div class="col-lg-2 col-md-1 col-2 p-0">
+            <div>
+              <img src="img/profile.png" alt="avatar" class="rounded-circle" />
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-11 col-10 ml-2  p-0 row flex-column">
+            <a class="mb-1" href="#">
+              GOP Want to Punish Americans for Not Working—It Makes No Economic Sense
+            </a>
+            <p>BY <strong>Lindsay Ovens</strong></p>
+          </div>
+        </article>
+
+      </div>
+      <!-- sign up  -->
+
+      <div class="d-none d-md-block order-last order-md-last my-1 p-4 p-lg-0 w-100 bg-white">
+        <div class="row border mb-3 badge-light  col-sm-6 col-lg-12 m-auto ">
+          <img class="w-25 col-2 my-3 pr-0" src="img/n.png" alt="Newsletter logo">
+          <h5 class="font-weight-bolder mt-3 pr-1 col-10">START YOUR DAY WITH OUR TOP 5 ARTICLES</h5>
+          <input class="border my-1 mx-3 p-1 w-100" type="email" name="email" placeholder="Email...">
+          <button type="submit" class="mt-1 p-1 mb-3 mx-3 border-0 text-white w-100 font-weight-bold bg-danger">
+            FREE SIGN-UP >
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+  <section class="in-magazine">
+
+    <div class="border-bottom bg-white d-flex justify-content-center pb-3">
+      <div class="d-flex justify-content-center">
+        <img class="logo-pic w-25 mr-2" src="img/n.png" alt="Newsletter logo">
+        <h5 class="align-self-center">IN THE MAGAZINE</h5>
+      </div>
+    </div>
+
+    <div class="row pt-3 bg-white">
+      <div class="card border-0 mb-3 col-md-3">
+        <figure class="position-relative mb-0">
+          <img src="img/image26.jpg" alt="newsletter MAGAZINE" class="w-100 p-0 mb-0" />
+          <figcaption class="position-absolute text-nowrap p-1 my-0">
+            AUGUST 07 ISSUE
+          </figcaption>
+        </figure>
+        <button type="submit" class="border-0 outline-none w-100 my-0 p-2 btn-light">
+          SEE ALL FEATURES >
+        </button>
+      </div>
+
+      <div class="card border-0 mb-3 col-md-3">
+        <figure class="position-relative h-75 pt-2 mb-0">
+          <img src="img/trump.jpg" alt="newsletter MAGAZINE" class="w-100 h-100 mb-0" />
+          <figcaption class="position-absolute fixed-bottom w-100 text-nowrap bg-white p-1 my-0">
+            <span class="bg-danger text-white p-1">COVER</span><span class="text-danger p-1">NEWS</span>
+          </figcaption>
+        </figure>
+        <a href="">Exclusive: Kushner Gets Candid On Troubled Trump Campaign, Mideast, More</a>
+      </div>
+
+      <div class="card border-0 mb-3 col-md-3">
+        <figure class="position-relative h-75 pt-2 mb-0">
+          <img src="img/image28.jpg" alt="China MAGAZINE" class="w-100 h-100 mb-0" />
+          <figcaption class="position-absolute fixed-bottom w-100 text-nowrap bg-white p-1 my-0">
+            <span class="bg-danger text-white p-1">FEATURES</span><span class="text-danger p-1">CULTURE</span>
+          </figcaption>
+        </figure>
+        <a href="">How China Co-opts Hollywood</a>
+      </div>
+
+      <div class="card border-0 mb-3 col-md-3">
+        <figure class="position-relative h-75 pt-2 mb-0">
+          <img src="img/image29.jpg" alt="Judge" class="w-100 h-100 mb-0" />
+          <figcaption class="position-absolute fixed-bottom w-100 text-nowrap bg-white p-1 my-0">
+            <span class="bg-danger text-white p-1">PERISCOPE</span><span class="text-danger p-1">OPINION</span>
+          </figcaption>
+        </figure>
+        <a href="">The Supreme Court's Culture War Whiplash Is All in Your Head</a>
+      </div>
+    </div>
+
+    <div class="row  pb-3 bg-white">
+      <div class="card border-0 my-3 col-md-3">
+        <figure class="position-relative h-75 pt-2 mb-0">
+          <img src="img/image30.jpg" alt="Egypt MAGAZINE" class="w-100 h-100 mb-0" />
+          <figcaption class="position-absolute fixed-bottom w-100 text-nowrap bg-white p-1 my-0">
+            <span class="bg-danger text-white p-1">PERISCOPE</span><span class="text-danger p-1">CULTURE</span>
+          </figcaption>
+        </figure>
+        <a href="">In a New 'Me Too' Moment, Brave Women in Egypt are Turning the Tide</a>
+      </div>
+
+      <div class="card border-0 my-3 col-md-3">
+        <figure class="position-relative h-75 pt-2 mb-0">
+          <img src="img/image31.jpg" alt="Justice MAGAZINE" class="w-100 h-100 mb-0" />
+          <figcaption class="position-absolute fixed-bottom w-100 text-nowrap bg-white p-1 my-0">
+            <span class="bg-danger text-white p-1">PERISCOPE</span><span class="text-danger p-1">CULTURE</span>
+          </figcaption>
+        </figure>
+        <a href="">Let's Take Big Money Out of America's Justice System</a>
+      </div>
+
+      <div class="card border-0 my-3 col-md-3">
+        <figure class="position-relative h-75 pt-2 mb-0">
+          <img src="img/image32.jpg" alt="Justice MAGAZINE" class="w-100 h-100 mb-0" />
+          <figcaption class="position-absolute fixed-bottom w-100 text-nowrap bg-white p-1 my-0">
+            <span class="bg-danger text-white p-1">DOWNTIME</span><span class="text-danger p-1">CULTURE</span>
+          </figcaption>
+        </figure>
+        <a href="">Kermit the Frog and Miss Piggy on Their New Disney+ Show 'Muppets Now'</a>
+      </div>
+
+      <div class="card border-0 my-3 col-md-3">
+        <figure class="position-relative h-100 pt-2 mb-0">
+          <img src="img/image33.jpg" alt="Justice MAGAZINE" class="w-100 h-100 mb-0" />
+          <p class="position-absolute fixed-bottom w-25 text-nowrap py-1 my-0">
+            <span class="bg-danger text-white p-1 m-0">FIRE FIGHT</span>
+          </p>
+        </figure>
+        <a href="">Kermit the Frog and Miss Piggy on Their New Disney+ Show 'Muppets Now'</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-bottom in-magazine">
+
+    <div class="border-bottom row justify-content-center py-3 bg-white">
+      <div class="d-flex justify-content-center">
+        <img class="logo-pic w-25 mr-2" src="img/n.png" alt="Newsletter logo">
+        <h5 class="align-self-center">Editor's Picks</h5>
+      </div>
+    </div>
+
+    <div class="row pt-3 bg-white">
+      <div class="card border-0 my-3 col-lg-3 col-md-6">
+        <figure class="position-relative mb-0 w-100">
+          <img src="img/image34.png" alt="newsletter MAGAZINE" class="w-100 p-0 mb-0 img-fluid h-100" />
+          <figcaption class="position-absolute text-nowrap p-1 my-0">
+            NEWS
+          </figcaption>
+        </figure>
+        <a href="">
+          Largest U.S. Teachers Union Not Committed to Allowing Safety Strikes
+        </a>
+        <p>
+          The National Education Association, which boasts almost 2.3 million members, did not confirm to Newsweek if
+          it would support a strike.
+        </p>
+
+      </div>
+
+      <div class="card border-0 my-3 col-lg-3 col-md-6">
+        <figure class="position-relative mb-0">
+          <img src="img/image35.png" alt="newsletter MAGAZINE" class="w-100 p-0 mb-0" />
+          <figcaption class="position-absolute text-nowrap p-1 my-0">
+            TECH & SCIENCE
+          </figcaption>
+        </figure>
+        <a href="">
+          Zuckerberg 'Troubled' by Ad Targeting as Facebook Posts 18.3B Q2 Ad Revenue
+        </a>
+        <p>
+          Zuckerberg's net worth reportedly increased by more than $83 billion since the coronavirus was declared a
+          pandemic, one study suggested.
+        </p>
+
+      </div>
+
+      <div class="card border-0 my-3 col-lg-3 col-md-6">
+        <figure class="position-relative mb-0">
+          <img src="img/image36.png" alt="newsletter MAGAZINE" class="w-100 p-0 mb-0" />
+          <figcaption class="position-absolute text-nowrap p-1 my-0">
+            U.S.
+          </figcaption>
+        </figure>
+        <a href="">
+          Boston Bomber Will Receive a New Sentence After Death Penalty Reversal
+        </a>
+        <p>
+          Dzhokhar Tsarnaev originally received the death penalty for his role in the bombing of the 2013 Boston
+          Marathon which killed three people.
+        </p>
+
+      </div>
+
+      <div class="card border-0 my-3 col-lg-3 col-md-6">
+        <figure class="position-relative mb-0">
+          <img src="img/image35.png" alt="newsletter MAGAZINE" class="w-100 p-0 mb-0" />
+          <figcaption class="position-absolute text-nowrap p-1 my-0">
+            U.S.
+          </figcaption>
+        </figure>
+        <a href="">
+          Biden Nearly Doubles Lead Over Trump in One Week, Polls Show
+        </a>
+        <p>
+          Presumptive Democratic nominee Joe Biden nearly doubled his lead over President Donald Trump in one week,
+          according to a new national poll.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card border-0 my-3 col-lg-3 col-md-6">
+        <figure class="position-relative mb-0">
+          <img src="img/image40.png" alt="newsletter MAGAZINE" class="w-100 p-0 mb-0" />
+          <figcaption class="position-absolute text-nowrap p-1 my-0">
+            WORLD
+          </figcaption>
+        </figure>
+        <a href="#">
+          Brazil's Bolsonaro Accused by Former President of Making up COVID Infection
+        </a>
+        <p>
+          "I think Bolsonaro invented that he was contaminated in order to advertise the medicine," former Brazilian
+          president Luiz Inácio Lula da Silva said.
+        </p>
+
+      </div>
+
+      <div class="card border-0 my-3 col-lg-3 col-md-6">
+        <figure class="position-relative mb-0">
+          <img src="img/image41.png" alt="newsletter MAGAZINE" class="w-100 p-0 mb-0" />
+          <figcaption class="position-absolute text-nowrap p-1 my-0">
+            NEWS
+          </figcaption>
+        </figure>
+        <a href="">
+          One Day After Trump Suggests Delay, Hong Kong Postpones Elections to 2021
+        </a>
+        <p>
+          Hong Kong's Chief Executive Carrie Lam announced the September elections would be postponed a year citing
+          the coronavirus outbreak.
+        </p>
+
+      </div>
+
+      <div class="card border-0 my-3 col-lg-3 col-md-6">
+        <figure class="position-relative mb-0">
+          <img src="img/image36.png" alt="newsletter MAGAZINE" class="w-100 p-0 mb-0" />
+          <figcaption class="position-absolute text-nowrap p-1 my-0">
+            HEALTH
+          </figcaption>
+        </figure>
+        <a href="">
+          95 Percent of Americans Now Wearing Face Masks Regularly
+        </a>
+        <p>
+          The total is 12 percent more than at the start of July.
+        </p>
+
+      </div>
+
+      <div class="card border-0 my-3 col-lg-3 col-md-6">
+        <figure class="position-relative mb-0">
+          <img src="img/image36.png" alt="newsletter MAGAZINE" class="w-100 p-0 mb-0" />
+          <figcaption class="position-absolute text-nowrap p-1 my-0">
+            CULTURE
+          </figcaption>
+        </figure>
+        <a href="">
+          Hollywood Pays Tribute to 'Midnight Express' Director Alan Parker
+        </a>
+        <p>
+          In his career, Parker received two Oscar nominations for best director, for "Midnight Express" (1978) and
+          "Mississippi Burning" (1988).
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="row bg-white border-top flex-column">
+
+    <h4 class="red col-12">
+      U.S.
+    </h4>
+
+    <div class="row mb-3 m-0">
+
+      <div class="col-md-4">
+
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/police-car.jpg" alt="police-image" class="w-100" />
+          </figure>
+          <a class="mb-2" href="#">Florida Man Threatens to Sexually Assault Woman, Slaps Her</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/university-denver.jpg" alt="police-image" class="w-100" />
+          </figure>
+          <a class="mb-2" href="#">Law Student Tests Positive for COVID Soon After Taking Bar Exam With Others</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <article class="border-bottom pb-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <a href="#" class="h6">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+        <article class="border-bottom py-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class='col-md-7 col-lg-9'>
+            <a href="#">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+        <article class="py-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <a href="#">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="row bg-white border-top flex-column">
+
+    <h4 class="red col-12">
+      World
+    </h4>
+
+    <div class="row mb-3 m-0">
+
+      <div class="col-md-4">
+
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/police-car.jpg" alt="police-image" class="w-100" />
+          </figure>
+          <a class="mb-2" href="#">Florida Man Threatens to Sexually Assault Woman, Slaps Her</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/university-denver.jpg" alt="police-image" class="w-100" />
+          </figure>
+          <a class="mb-2" href="#">Law Student Tests Positive for COVID Soon After Taking Bar Exam With Others</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <article class="border-bottom pb-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <a href="#" class="h6">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+        <article class="border-bottom py-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class='col-md-7 col-lg-9'>
+            <a href="#">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+        <article class="py-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <a href="#">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="row bg-white border-top flex-column">
+
+    <h4 class="red col-12">
+      Business
+    </h4>
+
+    <div class="row mb-3 m-0">
+
+      <div class="col-md-4">
+
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/police-car.jpg" alt="police-image" class="w-100" />
+          </figure>
+          <a class="mb-2" href="#">Florida Man Threatens to Sexually Assault Woman, Slaps Her</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/university-denver.jpg" alt="police-image" class="w-100" />
+          </figure>
+          <a class="mb-2" href="#">Law Student Tests Positive for COVID Soon After Taking Bar Exam With Others</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <article class="border-bottom pb-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <a href="#" class="h6">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+        <article class="border-bottom py-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class='col-md-7 col-lg-9'>
+            <a href="#">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+        <article class="py-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <a href="#">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="row bg-white border-top flex-column">
+
+    <h4 class="red col-12">
+      Tech & Science
+    </h4>
+
+    <div class="row mb-3 m-0">
+
+      <div class="col-md-4">
+
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/police-car.jpg" alt="police-image" class="w-100" />
+          </figure>
+          <a class="mb-2" href="#">Florida Man Threatens to Sexually Assault Woman, Slaps Her</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/university-denver.jpg" alt="police-image" class="w-100" />
+          </figure>
+          <a class="mb-2" href="#">Law Student Tests Positive for COVID Soon After Taking Bar Exam With Others</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <article class="border-bottom pb-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <a href="#" class="h6">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+        <article class="border-bottom py-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class='col-md-7 col-lg-9'>
+            <a href="#">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+        <article class="py-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <a href="#">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="row bg-white border-top flex-column">
+
+    <h4 class="red col-12">
+      Culture
+    </h4>
+
+    <div class="row mb-3 m-0">
+
+      <div class="col-md-4">
+
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/police-car.jpg" alt="police-image" class="w-100" />
+          </figure>
+          <a class="mb-2" href="#">Florida Man Threatens to Sexually Assault Woman, Slaps Her</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/university-denver.jpg" alt="police-image" class="w-100" />
+          </figure>
+          <a class="mb-2" href="#">Law Student Tests Positive for COVID Soon After Taking Bar Exam With Others</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <article class="border-bottom pb-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <a href="#" class="h6">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+        <article class="border-bottom py-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class='col-md-7 col-lg-9'>
+            <a href="#">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+        <article class="py-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <a href="#">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="row bg-white border-top flex-column">
+
+    <h4 class="red col-12">
+      Sports
+    </h4>
+
+    <div class="row mb-3 m-0">
+
+      <div class="col-md-4">
+
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/police-car.jpg" alt="police-image" class="w-100" />
+          </figure>
+          <a class="mb-2" href="#">Florida Man Threatens to Sexually Assault Woman, Slaps Her</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="card border-0 mb-3 order-first">
+          <figure class="position-relative">
+            <img src="img/university-denver.jpg" alt="police-image" class="w-100" />
+          </figure>
+          <a class="mb-2" href="#">Law Student Tests Positive for COVID Soon After Taking Bar Exam With Others</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <article class="border-bottom pb-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <a href="#" class="h6">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+        <article class="border-bottom py-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class='col-md-7 col-lg-9'>
+            <a href="#">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+        <article class="py-4 d-flex">
+          <div class="col-md-5 col-lg-3 col-3 p-0 pb-md-5 pb-0 h-md-50">
+            <img src="img/rent-protest.jpg" alt="avatar" />
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <a href="#">
+              LAPD Arrests Teen Protester Dangling Donut on a String Outside Mayor's Home
+            </a>
+          </div>
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="row border-bottom bg-white pb-5">
+
+    <div class="col-lg-8 mb-md-3 my-5 m-lg-0">
+      <h6 class="red">SUBSCRIBE</h6>
+      <div class="d-sm-flex bg-lightgray h-100 bg-light">
+        <div class="col-lg-5 col-sm-4 col-12">
+          <img src="img/image-subscription.png" alt="Subscription image">
+        </div>
+        <div class="ml-sm-3 col-sm-6 my-auto text-center text-sm-left">
+          <h4 class="font-weight-bold">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h4>
+          <p class="font-weight-lighter">All Access + Weekly Delivery.
+            Choose A Membership That's Perfect for You!</p>
+          <button type="submit" class="btn border-0 outline-none bg-red text-white p-2 h5 rounded">SUBSCRIBE
+            &gt;</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mt-md-5 my-5 m-lg-0 ">
+      <h6 class="red">NEWSLETTER</h6>
+      <div class="d-flex h-100 border">
+        <div class="col-lg-6 col-3 d-none d-sm-block p-0">
+          <img src="img/newsletter.png" alt="Subscription image">
+        </div>
+        <div class="col-lg-6 col-sm-9 col-12 my-auto text-center text-sm-left">
+          <h4 class="font-weight-bold">The Starting 5
+          </h4>
+          <p class="font-weight-lighter small">See why nearly a quarter of a million subscribers begin their day with
+            the Starting 5.
+          </p>
+          <input class="border p-1 my-2 w-100" type="text" placeholder="Email Address">
+          <button type="submit" class="btn border-0 outline-none bg-red text-white h5 w-100 rounded">SUBSCRIBE
+            &gt;</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section
+    class="bg-white row border-top border-bottom pt-5 justify-content-between flex-md-row flex-column footer-social">
+    <div class="w-100 w-md-0 d-md-flex justify-content-start col-md-5">
+      <img class="img-fluid w-50 p-0 justify-content-start mb-3 footer-logo" src="img/logo-red.svg" alt="Newsweek logo">
+      <p class='col-md-2 text-nowrap align-self-center text-left mb-md-n2 ml-md-2 p-0  mb-2'>© 2020 NEWSWEEK</p>
+    </div>
+    <ul class="list-unstyled row col-md-4 m-0 mb-3 justify-content-md-end">
+      <li><i class="fab fa-facebook-square mx-1 fa-2x"></i></li>
+      <li><i class="fab fa-twitter mx-1 fa-2x"></i></li>
+      <li><i class="fab fa-instagram mx-1 fa-2x"></i></li>
+      <li><i class="fab fa-tumblr mx-1 fa-2x"></i></li>
+      <li><i class="fab fa-linkedin-in mx-1 fa-2x"></i></li>
+    </ul>
+  </section>
+
+  <footer class="pt-5 bg-white row">
+    <ul class="footer-ul text-secondary px-1 d-flex list-unstyled h6 flex-wrap">
+      <li class="px-2 ">Editions:</li>
+      <li class="px-2 border-right">U.S. Edition</li>
+      <li class="px-2 border-right">日本</li>
+      <li class="px-2 border-right">Pakistan</li>
+      <li class="px-2 border-right">Polska</li>
+      <li class="px-2 border-right">România</li>
+    </ul>
+
+    <ul class="footer-ul text-secondary px-1 mt-3 d-flex list-unstyled h6 flex-wrap">
+      <li class="px-2">About Us</li>
+      <li class="px-2 border-right">Corrections</li>
+      <li class="px-2 border-right">Contact Us</li>
+      <li class="px-2 border-right">Editorial Guidelines</li>
+      <li class="px-2 border-right">Advertise</li>
+      <li class="px-2 border-right">Copyright</li>
+      <li class="px-2 border-right">Copyright</li>
+      <li class="px-2 border-right">Terms & Conditions</li>
+      <li class="px-2 border-right">Privacy Policy</li>
+      <li class="px-2 border-right">Cookie Policy</li>
+      <li class="px-2 border-right">Terms of Sale</li>
+      <li class="px-2 border-right">Archive</li>
+      <li class="px-2 border-right">Announcements</li>
+      <li class="px-2 border-right">Consent preferences</li>
+    </ul>
+
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+
 </body>
 
 </html>
