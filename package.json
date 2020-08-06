@@ -15,8 +15,8 @@
   },
   "scripts": {
     "test": "npm run webhint && npm run stylelint && echo \"✅✅✅ All tests passed ✅✅✅\"",
-    "webhint": "npx hint .",
-    "stylelint": "npx stylelint **/*.css"
+    "webhint": "hint .",
+    "stylelint": "stylelint **/*.css"
   },
   "repository": {
     "type": "git",
